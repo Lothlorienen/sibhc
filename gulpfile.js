@@ -20,20 +20,13 @@ global.$ = {
 };
 $.sass.compiler = require('dart-sass');
 
-$.config = JSON.parse(
-  $.fs.readFileSync('./config/config.json'),
-);
+$.config = JSON.parse($.fs.readFileSync('./config/config.json'));
 $.config.buildMode = $.argv._[0].match(/build|build-prod/) ? 'prod' : 'dev';
-$.config.outputPath = $.config.buildMode === 'prod' ?
-  $.config.destPath : $.config.tmpPath;
+$.config.outputPath = $.config.buildMode === 'prod' ? $.config.destPath : $.config.tmpPath;
 
-if ($.config.criticalCss) {
-  $.critical = require('critical').stream;
-}
+if ($.config.criticalCss) $.critical = require('critical').stream
 
-$.tasks.forEach((taskPath) => {
-  require(taskPath)();
-});
+$.tasks.forEach((taskPath) => require(taskPath)());
 
 $.gulp.task('dev', done => {
   $.gulp.series('clean',
@@ -48,7 +41,7 @@ $.gulp.task('build', done => {
   $.gulp.series('clean',
     $.gulp.parallel('styles', 'scripts'),
     $.gulp.parallel('hbs', 'pngSprite', 'svgSprite', 'svgInline', 'assets'),
-    $.gulp.parallel('imageMin', 'criticalCss'),
+    // $.gulp.parallel('imageMin', 'criticalCss'),
     $.gulp.parallel('prepareHtmlBuild', 'webp'),
     $.gulp.parallel('meta'),
   )(done);
@@ -59,7 +52,7 @@ $.gulp.task('build-prod', done => {
     $.gulp.parallel('styles', 'scripts'),
     $.gulp.parallel('hbs-prod', 'svgSprite', 'svgInline', 'pngSprite', 'assets'),
     $.gulp.parallel('prepareHtmlProd', 'webp'),
-    $.gulp.parallel('sitemap'),
-    $.gulp.parallel('imageMin', 'criticalCss'),
+    // $.gulp.parallel('sitemap'),
+    // $.gulp.parallel('imageMin', 'criticalCss'),
   )(done);
 });

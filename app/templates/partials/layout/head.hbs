@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -7,69 +7,19 @@
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <title>{{ page-title }}</title>
-  <meta name="description" content="{{ page-description }}">
+  <title>{{page-title}}</title>
 
-  <meta name="msapplication-TileColor" content="#00aba9">
-  <meta name="msapplication-config" content="../assets/images/favicon/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+  {{#ifCond theme-color 'var-1'}}{{>core/theme-color color="#532AD3"}}{{/ifCond}}
+  {{#ifCond theme-color 'var-2'}}{{>core/theme-color color="#D1535E"}}{{/ifCond}}
+  {{#ifCond theme-color 'var-3'}}{{>core/theme-color color="#ED5F2C"}}{{/ifCond}}
+  {{#ifCond theme-color undefined}}{{>core/theme-color color="#1B74FD"}}{{/ifCond}}
 
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="../assets/images/favicon/site.webmanifest" crossorigin="use-credentials">
-  <link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#6607df">
+  {{>core/favicon}}
 
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="{{ page-url }}" />
-  <meta property="og:title" content="{{ page-title }}" />
-  <meta property="og:description" content="{{ page-description }}" />
-  <meta property="og:image" content="{{ page-image }}" />
-  <meta property="og:image:type" content="image/png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="{{ page-image-alt }}" />
-
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="">
-  <meta name="twitter:creator" content="">
-  <meta name="twitter:title" content="{{ page-title }}">
-  <meta name="twitter:description" content="{{ page-description }}">
-  <meta name="twitter:image" content="{{ page-image }}">
-
-  <link rel="canonical" href="{{ page-url }}">
   <link rel="stylesheet" href="../css/main.css?v={{cache}}">
-
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebPage",
-      "name": "{{ page-title }}",
-      "description": "{{ page-description }}",
-      "publisher": {
-        "@type": "Organization",
-        "name": "OZiTAG",
-        "url": "https://ozitag.com/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": [
-            "https://ozitag.com/logo.png"
-          ]
-        }
-      },
-      "datePublished": "{{ page-published-date }}",
-      "dateModified": "{{ page-modified-date }}",
-      "image": [
-        "{{ page-image-16-9 }}"
-      ],
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "{{ page-url }}"
-      }
-    }
-  </script>
 </head>
 
-<body class="page {{page-mod}} {{page-class}}">
+<body class="page{{#if page-mod}} {{page-mod}}{{/if}}{{#if page-class}} {{page-class}}{{/if}}{{#if
+    theme-color}} theme-{{theme-color}}{{/if}}">
 <div class="preloader js-preloader"></div>
 <div class="page__inner">

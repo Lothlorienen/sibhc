@@ -1,1 +1,1 @@
-[Link to the project](https://github.Lothlorienen.io/sibhc/html)
+[Link to the project](https://lothlorienen.github.io/sibhc/html)
