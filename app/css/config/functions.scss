@@ -32,6 +32,23 @@
   @return $arg / 16 + 'em';
 }
 
+// Square root of number
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+
+  @return $x1;
+}
+
+@function diagonal($diag) {
+  @return floor(abs(sqrt(2) * $diag));
+}
+
 /*
 input: '10px', output: 10;
 input: 10px, output: 10px

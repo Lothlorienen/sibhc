@@ -17,10 +17,12 @@ $breakpoints: (
 
 $z-layers: (
   hidden: -9999,
+  backdrop: -1,
   default: 1,
-  dropdown: 50,
   aside: 100,
   header: 100,
+  dropdown: 500,
   overlay: 1000,
-  modal: 1001
+  modal: 1001,
+  preloader: 5000
 );
