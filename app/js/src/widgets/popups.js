@@ -9,23 +9,17 @@ class Popup {
   }
 
   on(event, callback) {
-    if (!(event in this.eventHandlers)) {
-      this.eventHandlers[event] = [];
-    }
+    if (!(event in this.eventHandlers)) this.eventHandlers[event] = [];
 
     for (let i = 0; i < this.eventHandlers[event]; i++) {
-      if (this.eventHandlers[event][i] === callback) {
-        return;
-      }
+      if (this.eventHandlers[event][i] === callback) return;
     }
 
     this.eventHandlers[event].push(callback);
   }
 
   trigger(event, eventParams = {}) {
-    if (!(event in this.eventHandlers)) {
-      return;
-    }
+    if (!(event in this.eventHandlers)) return;
 
     this.eventHandlers[event].forEach(handler => handler(eventParams));
   }
@@ -47,9 +41,7 @@ class Popup {
   close() {
     this.nodeElement.classList.remove('opened');
 
-    setTimeout(() => {
-      this.trigger('closed');
-    }, 0);
+    setTimeout(() => this.trigger('closed'), 0);
   }
 
   open() {
@@ -79,9 +71,7 @@ class PopupManager {
   }
 
   open(popupId) {
-    if (!(popupId in this.popups)) {
-      throw new Error('popup not found');
-    }
+    if (!(popupId in this.popups)) throw new Error('popup not found');
 
     this.createOverlay();
 
@@ -104,9 +94,7 @@ class PopupManager {
     document.body.appendChild(this.overlay);
 
     this.overlay.addEventListener('click', () => {
-      if (this.visiblePopup) {
-        this.visiblePopup.close();
-      }
+      if (this.visiblePopup) this.visiblePopup.close();
     });
   }
 

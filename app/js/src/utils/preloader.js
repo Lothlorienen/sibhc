@@ -2,7 +2,7 @@ class Preloader {
   static disablingPreloader() {
     const preloader = document.querySelector('.js-preloader');
     const handler = e => {
-      const { target, currentTarget } = e;
+      const {target, currentTarget} = e;
       if (target !== currentTarget) return false;
       preloader.removeEventListener(endEvents.animation, handler);
       preloader.style.display = 'none';
