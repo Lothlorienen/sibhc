@@ -1,3 +1,38 @@
 .footer {
+    padding: 40px 0 30px;
+    color: #4f4e4e;
+    background: #fff;
 
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-nav {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__item {
+            flex: 50%;
+            color: #4f4e4e;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__contacts {
+        width: 100%;
+        max-width: 382px;
+    }
+
+    &-contacts {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &__item {
+            flex: 50%;
+            margin-bottom: 30px;
+        }
+    }
 }
