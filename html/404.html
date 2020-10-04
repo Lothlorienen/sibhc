@@ -32,11 +32,9 @@
 
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="../assets/images/favicon/site.webmanifest" crossorigin="use-credentials">
-  <link rel="stylesheet" href="../css/main.css?v=4032">
+<!--  { {>core/favicon}}-->
+
+  <link rel="stylesheet" href="../css/main.css?v=1145">
 </head>
 
 <body class="page">
@@ -44,122 +42,129 @@
 <div class="page__inner">
 
 <header class="header page__header">
-    <div class="header__top">
-        <div class="container">
-            <div class="header-top">
-                <div class="header__logo">
-                    <img src="../assets/images/common/logo.png" alt="logo">
-                </div>
-                <div class="header__contacts">
-                    <ul class="header-contacts">
-                        <li class="header-contacts__item">
-                            <div class="contacts-item">
-                                <span class="contacts-item__title">Наш email:</span>
-                                <a href="mailto:sibbc@yandex.ru" class="contacts-item__link">sibbc@yandex.ru</a>
-                            </div>
-                        </li>
-                        <li class="header-contacts__item">
-                            <div class="contacts-item">
-                                <span class="contacts-item__title">Отдел сбыта:</span>
-                                <a href="tel:+73912205866" class="contacts-item__link">+7 (391) 220 58 66</a>
-                            </div>
-                        </li>
-                        <li class="header-contacts__item">
-                            <div class="contacts-item">
-                                <span class="contacts-item__title">Приемная:</span>
-                                <a href="tel:+73912211526" class="contacts-item__link">+7 (391) 221 15 26</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="header__actions">
-                    <button class="header__actions-btn js-popup">Заказать звонок</button>
-                </div>
-            </div>
+  <div class="header__top">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-top__container">
+          <!--Brand-->
+          <div class="header-top__logo">
+              <a class="header-top__logo-container" href="#">
+                <img src="../assets/images/common/logo.png" alt="Логотип">
+              </a>
+          </div>
+          <!--Contacts-->
+          <div class="header-top__contacts">
+            <ul class="header-top__contacts-list">
+              <li class="header-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Наш email:</span>
+                  <a class="contacts-item__link" href="mailto:sibbc@yandex.ru">sibbc@yandex.ru</a>
+                  <a class="contacts-item__link" href></a>
+                </div>        </li>
+              <li class="header-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Отдел сбыта:</span>
+                  <a class="contacts-item__link" href="tel:+73912205866">+7 (391) 220 58 66</a>
+                  <a class="contacts-item__link" href></a>
+                </div>        </li>
+              <li class="header-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Приемная:</span>
+                  <a class="contacts-item__link" href="tel:+73912211526">+7 (391) 221 15 26</a>
+                  <a class="contacts-item__link" href></a>
+                </div>        </li>
+            </ul>
+          </div>
+          <!--Actions-->
+          <div class="header-top__actions">
+            <button class="header-top__actions-btn js-popup"><span>Заказать звонок</span></button>
+          </div>
         </div>
+      </div>    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <nav class="header-menu">
+        <ul class="header-menu__list">
+          <li class="header-menu__item">
+            <a href="#" class="menu-item">главная</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="menu-item">о компании</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="menu-item">каталог товаров</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="menu-item">мастер-классы</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="menu-item">блог</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="menu-item">контакты</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <div class="header__bottom">
-        <div class="container">
-            <nav class="header-menu">
-                <ul class="header-menu__list">
-                    <li class="header-menu__item">
-                        <a href="#" class="menu-item">главная</a>
-                    </li>
-                    <li class="header-menu__item">
-                        <a href="#" class="menu-item">о компании</a>
-                    </li>
-                    <li class="header-menu__item">
-                        <a href="#" class="menu-item">каталог товаров</a>
-                    </li>
-                    <li class="header-menu__item">
-                        <a href="#" class="menu-item">мастер-классы</a>
-                    </li>
-                    <li class="header-menu__item">
-                        <a href="#" class="menu-item">блог</a>
-                    </li>
-                    <li class="header-menu__item">
-                        <a href="#" class="menu-item">контакты</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+  </div>
 </header>
 
 <main class="page__content">
+
 </main>
 
 <footer class="footer page__footer">
-    <div class="container">
-        <div class="footer__content">
-            <div class="footer__logo">
-                <img src="../assets/images/common/logo.png" alt="logo">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__logo">
+        <img src="../assets/images/common/logo.png" alt="logo">
+      </div>
+      <div class="footer__nav">
+        <ul class="footer-nav">
+          <li class="footer-nav__item">Главная</li>
+          <li class="footer-nav__item">О компаии</li>
+          <li class="footer-nav__item">Каталог товаров</li>
+          <li class="footer-nav__item">Блог</li>
+          <li class="footer-nav__item">Контакты</li>
+        </ul>
+      </div>
+      <div class="footer__contacts">
+        <ul class="footer-contacts">
+          <li class="footer-contacts__item">
+            <div class="contacts-item">
+              <span class="contacts-item__title">Наш адрес:</span>
+              <a href="#" class="contacts-item__link">Россия, г. Красноярск, ул. Маерчака, 55</a>
             </div>
-            <div class="footer__nav">
-                <ul class="footer-nav">
-                <li class="footer-nav__item">Главная</li>
-                <li class="footer-nav__item">О компаии</li>
-                <li class="footer-nav__item">Каталог товаров</li>
-                <li class="footer-nav__item">Блог</li>
-                <li class="footer-nav__item">Контакты</li>
-                </ul>
+          </li>
+          <li class="footer-contacts__item">
+            <div class="contacts-item">
+              <span class="contacts-item__title">Отдел сбыта:</span>
+              <a href="tel: +7 (391) 220 58 66" class="contacts-item__link">+7 (391) 220 58 66</a>
+              <a href="tel: +7 (391) 221-57-73" class="contacts-item__link">+7 (391) 221-57-73</a>
             </div>
-            <div class="footer__contacts">
-                <ul class="footer-contacts">
-                    <li class="footer-contacts__item">
-                        <div class="contacts-item">
-                            <span class="contacts-item__title">Наш адрес:</span>
-                            <a href="#" class="contacts-item__link">Россия, г. Красноярск, ул. Маерчака, 55</a>
-                        </div>
-                    </li>
-                    <li class="footer-contacts__item">
-                        <div class="contacts-item">
-                            <span class="contacts-item__title">Отдел сбыта:</span>
-                            <a href="tel: +7 (391) 220 58 66" class="contacts-item__link">+7 (391) 220 58 66</a>
-                            <a href="tel: +7 (391) 221-57-73" class="contacts-item__link">+7 (391) 221-57-73</a>
-                        </div>
-                    </li>
-                    <li class="footer-contacts__item">
-                        <div class="contacts-item">
-                            <span class="contacts-item__title">Наш E-mail:</span>
-                            <a href="mailto:sibbc@yandex.ru" class="contacts-item__link">sibbc@yandex.ru</a>
-                        </div>
-                    </li>
-                    <li class="footer-contacts__item">
-                        <div class="contacts-item">
-                            <span class="contacts-item__title">Приемная:</span>
-                            <a href="tel: +7 (391) 221 15 26" class="contacts-item__link">+7 (391) 221 15 26</a>
-                        </div>
-                    </li>
-                </ul>
+          </li>
+          <li class="footer-contacts__item">
+            <div class="contacts-item">
+              <span class="contacts-item__title">Наш E-mail:</span>
+              <a href="mailto:sibbc@yandex.ru" class="contacts-item__link">sibbc@yandex.ru</a>
             </div>
-        </div>
+          </li>
+          <li class="footer-contacts__item">
+            <div class="contacts-item">
+              <span class="contacts-item__title">Приемная:</span>
+              <a href="tel: +7 (391) 221 15 26" class="contacts-item__link">+7 (391) 221 15 26</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 </footer>
 
 </div>
 
-<script src="../js/vendors.js?v=4032" defer></script>
-  <script src="../js/main.js?v=4032" defer></script>
+<script src="../js/vendors.js?v=1145" defer></script>
+  <script src="../js/main.js?v=1145" defer></script>
 </body>
 </html>
