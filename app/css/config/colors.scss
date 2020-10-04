@@ -2,6 +2,12 @@
   //Primary
   --color-primary: var(--color-blue-70);
   --color-primary-hover: var(--color-blue-80);
+  --color-bg-gray: #f1f5f9;
+  --color-font-gray: #4f4e4e;
+  --color-font-dark: #333333;
+  --color-yellow: #feb22e;
+  --color-yellow-hover: #ffbc38;
+
   // Blue
   --color-blue-100: #0038D7;
   --color-blue-80: #0042FF;
@@ -66,8 +72,13 @@ $color-white-50: var(--color-white-50);
 $color-white-20: var(--color-white-20);
 $color-white-10: var(--color-white-10);
 $color-black: #000000;
-$color-primary: var(--color-primary);
-$color-primary-hover: var(--color-primary-hover);
+$color-yellow: var(--color-yellow);
+$color-yellow-hover: var(--color-yellow-hover);
+$color-primary: var(--color-yellow);
+$color-primary-hover: var(--color-yellow-hover);
+$color-bg-gray: var(--color-bg-gray);
+$color-font-gray: var(--color-font-gray);
+$color-font-dark: var(--color-font-dark);
 
 $color-var1: #532AD3;
 

@@ -1,0 +1,46 @@
+<div class="header-top">
+  <div class="header-top__container">
+    <!--Brand-->
+    <div class="header-top__logo">
+      {{#ifCond current-page 'main'}}
+        <span class="header-top__logo-container">
+          <img src="../assets/images/common/logo.png" alt="Логотип">
+        </span>
+      {{else}}
+        <a class="header-top__logo-container" href="#">
+          <img src="../assets/images/common/logo.png" alt="Логотип">
+        </a>
+      {{/ifCond}}
+    </div>
+    <!--Contacts-->
+    <div class="header-top__contacts">
+      <ul class="header-top__contacts-list">
+        <li class="header-top__contacts-item">
+          {{>components/contacts-item
+              title="Наш email:"
+              href="mailto:sibbc@yandex.ru"
+              label="sibbc@yandex.ru"
+          }}
+        </li>
+        <li class="header-top__contacts-item">
+          {{>components/contacts-item
+              title="Отдел сбыта:"
+              href="tel:+73912205866"
+              label="+7 (391) 220 58 66"
+          }}
+        </li>
+        <li class="header-top__contacts-item">
+          {{>components/contacts-item
+              title="Приемная:"
+              href="tel:+73912211526"
+              label="+7 (391) 221 15 26"
+          }}
+        </li>
+      </ul>
+    </div>
+    <!--Actions-->
+    <div class="header-top__actions">
+      <button class="header-top__actions-btn js-popup"><span>Заказать звонок</span></button>
+    </div>
+  </div>
+</div>

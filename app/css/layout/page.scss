@@ -1,6 +1,8 @@
 .page {
   display: flex;
   justify-content: center;
+  color: $color-font-gray;
+  background-color: $color-bg-gray;
 
   &__inner {
     display: flex;

@@ -1,0 +1,20 @@
+.contacts-item {
+  &__title {
+    display: block;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  &__link {
+    display: block;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.65;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
