@@ -2,19 +2,27 @@
   &__container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     padding: 25px 0;
 
     > * + * {
-      margin-left: 24px;
+      @include media(mobile, up) {
+        margin-left: 24px;
+      }
     }
   }
 
   &__logo {
     position: relative;
-    flex: 0 1 280px;
+    flex: 0 1 calc(25% - 24px);
     width: 100%;
     max-width: 280px;
+
+    @include media(mobile) {
+      flex-basis: 100%;
+      margin: 0 auto;
+    }
 
     &::after {
       content: '';
@@ -41,20 +49,64 @@
   &__contacts {
     flex: 1 1 auto;
     max-width: 590px;
-    margin-bottom: 10px;
+
+    @include media(mobile, up) {
+      margin-bottom: 10px;
+    }
+
+    @include media(tablet) {
+      flex-basis: calc(50% - 24px);
+    }
+
+    @include media(mobile) {
+      flex-basis: 100%;
+    }
   }
 
   &__contacts-list {
     display: flex;
-    align-items: flex-start;
     justify-content: space-around;
     line-height: 25px;
+
+    @include media(mobile, up) {
+      align-items: flex-start;
+    }
+
+    @include media(mobile) {
+      flex-wrap: wrap;
+      margin: 10px auto 0;
+    }
+
+    > * + * {
+      @include media(mobile, up) {
+        margin-left: 24px;
+      }
+    }
+  }
+
+  &__contacts-item {
+    &--email {
+      @include media(mobile) {
+        display: none;
+      }
+    }
   }
 
   &__actions {
-    flex: 0 1 255px;
+    flex: 0 1 calc(25% - 24px);
     width: 100%;
     max-width: 255px;
+
+    @include media(tabletSmall) {
+      flex-basis: auto;
+      margin-left: auto;
+    }
+
+    @include media(mobile) {
+      flex-basis: 100%;
+      margin-right: auto;
+      margin-top: 10px;
+    }
   }
 
   &__actions-btn {
