@@ -1,30 +1,28 @@
 .header {
+  &__top {
+    @include media(tabletSmall) {
+      padding-top: 50px;
+    }
+  }
 
-  &__bottom {
+  &__main {
     background: $color-white;
-  }
 
-  &-menu {
-    &__list {
-      display: flex;
+    @include media(tabletSmall) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: z(header);
+      min-width: 250px;
+      box-shadow: 0 0 0 0 transparent;
+      @include transition(all, 350ms, ease);
+      transform: translateX(-100%);
+
+      &.active {
+        transform: translateX(0);
+        @include shadow(lg);
+      }
     }
-
-    &__item {
-      flex-grow: 1;
-    }
-  }
-}
-
-.menu-item {
-  display: block;
-  font-weight: 700;
-  text-transform: uppercase;
-  height: 64px;
-  line-height: 64px;
-  text-align: center;
-  border-left: 1px solid #f1f5f9;
-
-  &:last-child {
-    border-right: 1px solid #f1f5f9;
   }
 }

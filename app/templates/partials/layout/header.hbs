@@ -1,33 +1,14 @@
 <header class="header page__header">
+  <!--Top-->
   <div class="header__top">
     <div class="container">
-      {{>blocks/header/header-top current-page=current-page}}
+      {{>blocks/header/header-top}}
     </div>
   </div>
-  <div class="header__bottom">
+  <!--Main-->
+  <div class="header__main js-header-menu">
     <div class="container">
-      <nav class="header-menu">
-        <ul class="header-menu__list">
-          <li class="header-menu__item">
-            <a href="#" class="menu-item">главная</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="menu-item">о компании</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="menu-item">каталог товаров</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="menu-item">мастер-классы</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="menu-item">блог</a>
-          </li>
-          <li class="header-menu__item">
-            <a href="#" class="menu-item">контакты</a>
-          </li>
-        </ul>
-      </nav>
+      {{>blocks/header/header-main}}
     </div>
   </div>
 </header>

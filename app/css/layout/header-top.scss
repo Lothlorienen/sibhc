@@ -19,6 +19,10 @@
     width: 100%;
     max-width: 280px;
 
+    @include media(tabletSmall) {
+      flex-basis: 40%;
+    }
+
     @include media(mobile) {
       flex-basis: 100%;
       margin: 0 auto;

@@ -1,0 +1,31 @@
+<div class="header-main">
+  <div class="header-main__container">
+    <div class="header-main__close">
+      <button class="header-main__close-btn js-header-menu__close" type="button" aria-label="Открыть меню.">
+        <span class="header-main__close-icon"></span>
+      </button>
+    </div>
+    <nav class="header-main__menu">
+      <ul class="header-main__list">
+        <li class="header-main__item">
+          <a class="header-main__link{{#ifCond current-page 'main'}} active{{/ifCond}}" href="#">главная</a>
+        </li>
+        <li class="header-main__item">
+          <a class="header-main__link{{#ifCond current-page 'about'}} active{{/ifCond}}" href="#">о компании</a>
+        </li>
+        <li class="header-main__item">
+          <a class="header-main__link{{#ifCond current-page 'catalog'}} active{{/ifCond}}" href="#">каталог товаров</a>
+        </li>
+        <li class="header-main__item">
+          <a class="header-main__link{{#ifCond current-page 'events'}} active{{/ifCond}}" href="#">мастер-классы</a>
+        </li>
+        <li class="header-main__item">
+          <a class="header-main__link{{#ifCond current-page 'news'}} active{{/ifCond}}" href="#">блог</a>
+        </li>
+        <li class="header-main__item">
+          <a class="header-main__link{{#ifCond current-page 'contacts'}} active{{/ifCond}}" href="#">контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

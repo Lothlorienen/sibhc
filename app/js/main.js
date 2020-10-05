@@ -12,6 +12,7 @@ import './src/utils/mobile-debug';
 
 import './src/widgets/popups';
 import './src/widgets/example';
+import './src/widgets/header/header';
 
 import './src/app';
 

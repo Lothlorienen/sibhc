@@ -1,6 +1,7 @@
 class Widget {
   constructor(node, selector, breakpoint = null) {
     this.$node = node;
+    if (!this.$node) return;
 
     this.selector = selector ? (selector.substr(0, 1) === '.' ? selector.substr(1) : selector) : null;
 
@@ -12,19 +13,25 @@ class Widget {
     if (this.breakpoint) {
       onResize(this.updateBreakpointCache.bind(this));
       this.updateBreakpointCache();
-    } else{
+    } else {
       this.build();
     }
   }
 
-  checkBreakpoint() {
+
+
+  get checkBreakpoint() {
     switch (this.breakpoint) {
       case null:
         return true;
       case 'mobile':
         return isMobileLayout();
+      case 'mobile up':
+        return !isMobileLayout();
       case 'tablet':
         return isTabletLayout();
+      case 'tablet up':
+        return !isTabletLayout();
       case 'tablet-mobile':
         return isMobileLayout() || isTabletLayout();
       case 'laptop':
@@ -39,21 +46,20 @@ class Widget {
   }
 
   updateBreakpointCache() {
-    const check = this.checkBreakpoint();
+    const check = this.checkBreakpoint;
 
     if ((this.breakpointStatus === false || this.breakpointStatus === null) && check) {
       this.breakpointStatus = true;
-      if (typeof this.build === 'function') {
-        this.build();
-      }
+      console.log('init')
+
+      if (typeof this.build === 'function') this.build();
     } else if (this.breakpointStatus && !check) {
       this.breakpointStatus = false;
-      if (typeof this.destroy === 'function') {
-        this.destroy();
-      }
+      console.log('destroy')
+
+      if (typeof this.destroy === 'function') this.destroy();
     }
   }
-
 
   build() {
 
@@ -63,20 +69,19 @@ class Widget {
 
   }
 
-
   /**
    * @param selector
    * @returns Node
    */
+
   queryElement(selector) {
     let $node = null;
 
     if (selector) {
       if (selector[0] === '.') {
         $node = this.$node.querySelector('.' + this.selector + '__' + selector.substr(1));
-        if (!$node) {
-          $node = this.$node.querySelector(selector);
-        }
+
+        if (!$node) $node = this.$node.querySelector(selector);
       } else {
         $node = this.$node.querySelector(selector);
       }
@@ -99,9 +104,8 @@ class Widget {
     if (selector) {
       if (selector[0] === '.') {
         $nodes = this.$node.querySelectorAll('.' + this.selector + '__' + selector.substr(1));
-        if (!$nodes) {
-          $nodes = this.$node.querySelectorAll(selector);
-        }
+
+        if (!$nodes) $nodes = this.$node.querySelectorAll(selector);
       } else {
         $nodes = this.$node.querySelectorAll(selector);
       }
@@ -109,7 +113,6 @@ class Widget {
 
     return $nodes;
   }
-
 }
 
 window.Widget = Widget;

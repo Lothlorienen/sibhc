@@ -101,6 +101,21 @@
   transition: $property $duration $fn;
 }
 
+@mixin shadow($arg-shadow) {
+  @if $arg-shadow == sm {
+    box-shadow: 0 2px 5px rgba(48, 66, 117, 0.2);
+  }
+  @if $arg-shadow == md {
+    box-shadow: 1px 4px 9px rgba(48, 66, 117, 0.13);
+  }
+  @if $arg-shadow == lg {
+    box-shadow: 0 9px 20px rgba(48, 66, 117, 0.13);
+  }
+  @if $arg-shadow == xl {
+    box-shadow: 3px 15px 30px rgba(48, 66, 117, 0.1);
+  }
+}
+
 @mixin triangle($width, $dir, $color) {
   @if $dir == up {
     width: 0;

@@ -2,7 +2,6 @@ const LayoutConfig = {
   mobile_width: 767,
   tablet_width: 1023,
   laptop_width: 1279,
-  layout_width: window.innerWidth || document.documentElement.clientWidth,
   listeners: [],
   documentClickListeners: [],
   is_mobile: 0,
@@ -33,9 +32,9 @@ class Layout {
   }
 
   resizeEvents() {
-    const isMobile = Layout.isMobileLayout;
-    const isTablet = Layout.isTabletLayout;
-    const isLaptop = Layout.isLaptopLayout;
+    const isMobile = Layout.isMobileLayout();
+    const isTablet = Layout.isTabletLayout();
+    const isLaptop = Layout.isLaptopLayout();
 
     if (isMobile !== LayoutConfig.is_mobile) {
       LayoutConfig.is_mobile = isMobile;
@@ -74,19 +73,19 @@ class Layout {
   }
 
   static isMobileLayout() {
-    return LayoutConfig.layout_width <= LayoutConfig.mobile_width;
+    return window.innerWidth <= LayoutConfig.mobile_width;
   }
 
   static isTabletLayout() {
-    return LayoutConfig.layout_width <= LayoutConfig.tablet_width;
+    return window.innerWidth <= LayoutConfig.tablet_width;
   }
 
   static isBigTabletLayout() {
-    return LayoutConfig.layout_width > LayoutConfig.tablet_width && LayoutConfig.layout_width <= LayoutConfig.laptop_width;
+    return window.innerWidth > LayoutConfig.tablet_width && window.innerWidth <= LayoutConfig.laptop_width;
   }
 
   static isLaptopLayout() {
-    return LayoutConfig.layout_width <= LayoutConfig.laptop_width;
+    return window.innerWidth <= LayoutConfig.laptop_width;
   }
 
   static isDesktopLayout() {
