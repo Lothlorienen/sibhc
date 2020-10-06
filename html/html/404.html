@@ -34,7 +34,7 @@
 
 <!--  { {>core/favicon}}-->
 
-  <link rel="stylesheet" href="../css/main.css?v=3780">
+  <link rel="stylesheet" href="../css/main.css?v=927">
 </head>
 
 <body class="page">
@@ -79,7 +79,23 @@
           </div>
           <!--Actions-->
           <div class="header-top__actions">
-            <button class="header-top__actions-btn js-popup"><span>Заказать звонок</span></button>
+            <button class="header-top__actions-btn js-popup-open" data-popup="example"><span>Заказать звонок</span></button>
+      
+            <!--Popup-->
+            <div class="popup js-popup" data-popup-id="example">
+              <div class="popup__wrapper">
+                <div class="popup__inner">
+                  <button class="popup__close js-popup-close"></button>
+            
+                  <div class="popup__window">
+                    <div class="popup__content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam modi nemo nihil officia rerum tempore
+                        voluptatem?
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>    </div>
@@ -195,7 +211,7 @@
 
 </div>
 
-<script src="../js/vendors.js?v=3780" defer></script>
-  <script src="../js/main.js?v=3780" defer></script>
+<script src="../js/vendors.js?v=927" defer></script>
+  <script src="../js/main.js?v=927" defer></script>
 </body>
 </html>
