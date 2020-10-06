@@ -1,9 +1,11 @@
 .header-main {
   &__menu {
-    display: flex;
-    max-height: calc(var(--vh, 1vh) * 100);
-    overflow: auto;
-    @include hide-scrollbar;
+    @include media(tabletSmall) {
+      display: flex;
+      max-height: calc(var(--vh, 1vh) * 100);
+      overflow: auto;
+      @include hide-scrollbar;
+    }
   }
 
   &__list {
