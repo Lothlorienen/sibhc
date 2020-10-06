@@ -1,19 +1,19 @@
 class ScrollControl {
-  constructor () {
+  constructor() {
     this.isFixedScroll = false;
-    this.lastScrollPos = this.scrollPos;
+    this.lastScrollPos = this._getScrollPos();
 
     onScroll(() => {
       if (this.isFixedScroll) return false;
-      this.lastScrollPos = this.scrollPos;
+      this.lastScrollPos = this._getScrollPos();
     });
   }
 
-  get scrollPos() {
+  _getScrollPos() {
     return window.pageYOffset;
   }
 
-  showScrollbar () {
+  showScrollbar() {
     if (!document.body.classList.contains('fixed-scroll')) return false;
 
     document.body.classList.remove('fixed-scroll');
@@ -29,13 +29,16 @@ class ScrollControl {
     return true;
   }
 
-  hideScrollbar () {
+  hideScrollbar(callback) {
     if (document.body.classList.contains('fixed-scroll')) return false;
-
     if (isMobileLayout()) document.body.style.top = `-${this.lastScrollPos}px`;
 
+    const scrollBarWidth = ScrollControl._calcScrollbarWidth();
+
     document.body.classList.add('fixed-scroll');
-    document.body.style.paddingRight = ScrollControl._calcScrollbarWidth();
+    document.body.style.paddingRight = scrollBarWidth;
+
+    if (callback) callback(scrollBarWidth);
 
     this.isFixedScroll = true;
     return true;
@@ -45,11 +48,11 @@ class ScrollControl {
     return this.isFixedScroll;
   }
 
-  getLastScrollPos () {
+  getLastScrollPos() {
     return this.lastScrollPos;
   }
 
-  static _calcScrollbarWidth () {
+  static _calcScrollbarWidth() {
     const scrollbarMeasure = document.createElement('div');
     scrollbarMeasure.className = 'scroll-measure';
 

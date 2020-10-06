@@ -5,6 +5,11 @@ class Popup {
     this.nodeElement = nodeElement;
     this.id = nodeElement.dataset.popupId;
 
+    this.onCloseClick = this.onCloseClick.bind(this);
+    this.onOverlayClick = this.onOverlayClick.bind(this);
+
+    this.$popupContent = this.nodeElement.querySelector('.popup__content');
+
     this.init();
   }
 
@@ -34,18 +39,39 @@ class Popup {
   }
 
   init() {
-    this.nodeElement.querySelectorAll('.js-popup-close')
-      .forEach(element => element.addEventListener('click', this.onCloseClick.bind(this)));
+    this.nodeElement.querySelectorAll('.js-popup-close').forEach(element =>
+      element.addEventListener('click', this.onCloseClick),
+    );
   }
 
   close() {
-    this.nodeElement.classList.remove('opened');
+    this.nodeElement.querySelector('.popup__inner').classList.remove('opened');
 
+    setTimeout(() => this.nodeElement.classList.remove('opened'), 300);
     setTimeout(() => this.trigger('closed'), 0);
+
+    this.nodeElement.querySelectorAll('.js-popup-close').forEach(element =>
+      element.removeEventListener('click', this.onCloseClick),
+    );
+
+    this.nodeElement.removeEventListener('click', this.onOverlayClick);
   }
 
   open() {
     this.nodeElement.classList.add('opened');
+    setTimeout(() => this.nodeElement.querySelector('.popup__inner').classList.add('opened'));
+
+    this.nodeElement.addEventListener('click', this.onOverlayClick);
+  }
+
+  onOverlayClick(e) {
+    let target = e.target;
+    do {
+      if (target === this.$popupContent) return;
+      target = target.parentNode;
+    } while (target);
+
+    this.close();
   }
 }
 
@@ -65,8 +91,9 @@ class PopupManager {
     document.querySelectorAll('.js-popup-open[data-popup]').forEach(button => {
       button.addEventListener('click', e => {
         e.preventDefault();
-        this.open(e.target.dataset.popup);
-      });
+        const popupOpen = e.target.closest('.js-popup-open[data-popup]')
+        this.open(popupOpen.dataset.popup);
+      }, true);
     });
   }
 
@@ -89,6 +116,8 @@ class PopupManager {
       return;
     }
 
+    hideScrollbar();
+
     this.overlay = document.createElement('div');
     this.overlay.classList.add('popup-overlay');
     document.body.appendChild(this.overlay);
@@ -105,6 +134,7 @@ class PopupManager {
 
       this.overlay.addEventListener('transitionend', () => {
         overlay.remove();
+        showScrollbar();
       });
 
       this.overlay = null;
