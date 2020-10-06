@@ -2,15 +2,7 @@
   <div class="header-top__container">
     <!--Brand-->
     <div class="header-top__logo">
-      {{#ifCond current-page 'main'}}
-        <span class="header-top__logo-container">
-          <img src="../assets/images/common/logo.png" alt="Логотип">
-        </span>
-      {{else}}
-        <a class="header-top__logo-container" href="#">
-          <img src="../assets/images/common/logo.png" alt="Логотип">
-        </a>
-      {{/ifCond}}
+      {{>components/page-logo}}
     </div>
     <!--Contacts-->
     <div class="header-top__contacts">

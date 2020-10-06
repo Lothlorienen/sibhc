@@ -1,5 +1,6 @@
 <div class="contacts-item">
   <span class="contacts-item__title">{{title}}</span>
-  <a class="contacts-item__link" href="{{href}}">{{label}}</a>
+  {{#if text}}<span class="contacts-item__text">{{text}}</span>
+  {{else}}<a class="contacts-item__link" href="{{href}}">{{label}}</a>{{/if}}
   <a class="contacts-item__link" href="{{href-2}}">{{label-2}}</a>
 </div>

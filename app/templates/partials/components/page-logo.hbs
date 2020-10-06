@@ -1,0 +1,11 @@
+<div class="page-logo{{#if mode}} {{mode}}{{/if}}">
+  {{#ifCond current-page 'main'}}
+    <span class="page-logo__container">
+      <img src="../assets/images/common/logo.png" alt="Логотип">
+    </span>
+  {{else}}
+    <a class="page-logo__container" href="#">
+      <img src="../assets/images/common/logo.png" alt="Логотип">
+    </a>
+  {{/ifCond}}
+</div>

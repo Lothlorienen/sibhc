@@ -1,0 +1,49 @@
+<div class="footer-top">
+  <div class="footer-top__container">
+    <div class="footer-top__logo">
+      {{>components/page-logo}}
+    </div>
+    <div class="footer-top__nav">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О компаии</a></li>
+        <li><a href="#">Каталог товаров</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="footer-top__contacts">
+      <ul class="footer-top__contacts-list">
+        <li class="footer-top__contacts-item">
+          {{>components/contacts-item
+              title="Наш адрес:"
+              text="Россия, г. Красноярск, ул. Маерчака, 55"
+          }}
+        </li>
+        <li class="footer-top__contacts-item">
+          {{>components/contacts-item
+              title="Отдел сбыта:"
+              href="tel:+73912205866"
+              label="+7 (391) 220 58 66"
+              href-2="tel:+73912215773"
+              label-2="+7 (391) 221 57 73"
+          }}
+        </li>
+        <li class="footer-top__contacts-item">
+          {{>components/contacts-item
+              title="Наш email:"
+              href="mailto:sibbc@yandex.ru"
+              label="sibbc@yandex.ru"
+          }}
+        </li>
+        <li class="footer-top__contacts-item">
+          {{>components/contacts-item
+              title="Приемная:"
+              href="tel:+73912211526"
+              label="+7 (391) 221 15 26"
+          }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -11,8 +11,23 @@
     }
   }
 
-  &__link {
+  &__text {
     display: block;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 1.65;
+
+    @include media(mobile, up) {
+      white-space: nowrap;
+    }
+
+    @include media(tablet) {
+      font-size: 13px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
     font-size: 16px;
     font-weight: 900;
     line-height: 1.65;
