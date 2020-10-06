@@ -15,3 +15,4 @@ import './src/widgets/example';
 
 import './src/app';
 
+import './src/widgets/sliders/slider';
