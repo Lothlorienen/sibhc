@@ -53,6 +53,9 @@
   }
 
   &-slide {
+    position: relative;
+    padding: 39px 47px;
+    color: #fff;
     width: 100%;
     height: 100%;
     outline: 1px solid rgba(255, 255, 255, 0.3);
@@ -60,9 +63,30 @@
     z-index: 1;
 
     &__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
       object-fit: cover;
       height: 100%;
       width: 100%;
+    }
+
+    &__title {
+      text-transform: uppercase;
+      font-size: 22px;
+      max-width: 400px;
+      line-height: 32px;
+      font-weight: 700;
+      margin-bottom: 33px;
+    }
+
+    &__list {
+      margin-left: 125px;
+      list-style-type: disc;
+      font-size: 14px;
+      line-height: 22px;
+      max-width: 379px;
     }
   }
 
@@ -77,6 +101,8 @@
   }
 
   &__description {
+    width: 100%;
+    height: 474px;
     padding: 70px 24px 60px 60px;
     outline: 1px solid rgba(0, 0, 0, 0.3);
     outline-offset: -10px;
@@ -87,10 +113,40 @@
   &-description {
     position: relative;
 
+    &__content {
+      max-width: 733px;
+    }
+
+    &__text {
+      margin-top: 20px;
+      line-height: 23px;
+      font-size: 14px;
+      max-width: 565px;
+
+      &>* {
+        margin-top: 10px;
+      }
+
+      p:first-child {
+        margin-top: 0;
+      }
+
+      ul {
+        margin-left: 43px;
+      }
+
+      li:before {
+        content: "-";
+        position: relative;
+        left: -5px;
+      }
+    }
+
     &__background {
       position: absolute;
-      top: -30px;
+      top: -26px;
       right: -24px;
+      height: 430px;
       z-index: -1;
     }
   }
