@@ -1,4 +1,4 @@
-.ui {
+.project-ui {
   $ui-container-mah: 700px;
   $ui-header-mah: 64px;
   $ui-aside-maw: 250px;
@@ -24,7 +24,7 @@
     }
   }
 
-  &__aside {
+  &__sidebar {
     position: fixed;
     top: 0;
     left: 0;
@@ -38,23 +38,12 @@
     @include media(tabletSmall) {
       display: none;
     }
-  }
 
-  &__main {
-    flex: 1 1 75%;
-    padding: $ui-header-mah 0 0 $ui-aside-maw;
-
-    @include media(tabletSmall) {
-      padding: $ui-header-mah 0 0;
-    }
-  }
-
-  &-aside {
-    &__inner {
+    nav {
       padding: $ui-header-mah 10px;
     }
 
-    &__link {
+    a {
       display: block;
       padding: 5px 10px;
       width: 100%;
@@ -70,155 +59,83 @@
     }
   }
 
-  &-main {
+  &__main {
+    flex: 1 1 75%;
+    padding: $ui-header-mah 0 0 $ui-aside-maw;
     background-color: $color-white;
 
-    &__header {
-      position: fixed;
-      top: 0;
-      left: $ui-aside-maw;
-      right: 0;
-      z-index: z(header);
-      padding: 15px $ui-container-gutters;
-      border-bottom: 1px solid $color-gray-20;
-      background-color: $color-white;
-
-      @include media(tabletSmall) {
-        left: 0;
-      }
-
-      @include media(mobile) {
-        padding: $ui-container-gutters-mobile;
-      }
-    }
-
-    &__title {
-      margin: 0;
-      padding: 0;
-      font-size: 1.5em;
-      line-height: 1.4;
-    }
-
-    &__content {
-      padding: 0 $ui-container-gutters;
-      overflow-y: auto;
-
-      > *:first-child {
-        margin-top: 60px;
-      }
-
-      > * + * {
-        margin: 30px 0;
-      }
-
-      @include media(tabletSmall) {
-        max-height: initial;
-      }
-
-      @include media(mobile) {
-        padding: 0 $ui-container-gutters-mobile;
-      }
+    @include media(tabletSmall) {
+      padding: $ui-header-mah 0 0;
     }
   }
 
-  &-section {
-    &__title {
+  &__header {
+    position: fixed;
+    top: 0;
+    left: $ui-aside-maw;
+    right: 0;
+    z-index: z(header);
+    padding: 15px $ui-container-gutters;
+    border-bottom: 1px solid $color-gray-20;
+    background-color: $color-white;
+
+    @include media(tabletSmall) {
+      left: 0;
+    }
+
+    @include media(mobile) {
+      padding: $ui-container-gutters-mobile;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    line-height: 1.4;
+  }
+
+  &__content {
+    padding: 0 $ui-container-gutters;
+    overflow-y: auto;
+
+    > *:first-child {
+      margin-top: 60px;
+    }
+
+    > * + * {
+      margin: 30px 0;
+    }
+
+    @include media(tabletSmall) {
+      max-height: initial;
+    }
+
+    @include media(mobile) {
+      padding: 0 $ui-container-gutters-mobile;
+    }
+  }
+
+  &__section {
+    &-title {
       @include ui-font-title(30px);
     }
 
-    &__content {
+    &-content {
       margin-top: 20px;
-
-      ul {
-        > * + * {
-          margin-top: 35px;
-        }
-      }
-    }
-  }
-
-  &-colors {
-    li {
-      @include media(mobile) {
-        overflow-x: auto;
-        max-width: calc(100vw - 30px);
-        @include hide-scrollbar;
-      }
     }
 
-    table {
-      @include media(mobile) {
-        min-width: 675px;
-      }
-
-      td {
-        &:nth-child(1) {
-          width: 40%;
-
-          @include media(mobile) {
-            width: calc(100vw - 100px);
-          }
-        }
-
-        &:nth-child(2) {
-          width: 20%;
-
-          @include media(mobile) {
-            width: 100px;
-            text-align: center;
-          }
-        }
-
-        &:nth-child(3) {
-          width: 20%;
-        }
-      }
-
-      span {
-        $ui-t-value: 28px;
-        display: inline-block;
-        width: $ui-t-value;
-        height: $ui-t-value;
-        border-radius: 50%;
-
-        &.dark {
-          border: 1px solid $color-gray-100;
-        }
-      }
-    }
-  }
-
-  &-buttons {
-    &__container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1em;
-    }
-  }
-
-  .ui-inputs {
-    &__container {
-      display: flex;
-      gap: 1em;
+    &-row {
+      margin: -7.5px;
 
       > * {
-        flex: 1 1 100%;
+        margin: 7.5px;
       }
+    }
 
-      &--row {
-        flex-wrap: wrap;
-
-        > * {
-          flex: 1 1 45%;
-        }
-      }
-
-      &--column {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    ul {
+      > * + * {
+        margin-top: 30px;
       }
     }
   }
@@ -230,30 +147,121 @@
     td {
       padding: 14px 0;
     }
+  }
 
-    thead {
-      td {
-        color: $color-gray-20;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 1;
+  thead {
+    td {
+      color: $color-gray-60;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1;
+    }
+  }
+
+  tbody {
+    td {
+      font-size: 15px;
+      line-height: 1;
+      border-top: 1px solid $color-gray-40;
+      border-bottom: 1px solid $color-gray-40;
+    }
+  }
+
+  caption {
+    padding: 10px 0;
+    color: $color-gray-100;
+    @include ui-font-title;
+    text-align: left;
+  }
+}
+
+.ui-colors {
+  li {
+    @include media(mobile) {
+      overflow-x: auto;
+      max-width: calc(100vw - 30px);
+      @include hide-scrollbar;
+    }
+  }
+
+  table {
+    @include media(mobile) {
+      min-width: 675px;
+    }
+  }
+
+  td {
+    &:nth-child(1) {
+      width: 40%;
+
+      @include media(mobile) {
+        width: calc(100vw - 100px);
       }
     }
 
-    tbody {
-      td {
-        font-size: 15px;
-        line-height: 1;
-        border-top: 1px solid $color-gray-40;
-        border-bottom: 1px solid $color-gray-40;
+    &:nth-child(2) {
+      width: 20%;
+
+      @include media(mobile) {
+        width: 100px;
+        text-align: center;
       }
     }
 
-    caption {
-      padding: 10px 0;
-      color: $color-gray-100;
-      @include ui-font-title;
-      text-align: left;
+    &:nth-child(3) {
+      width: 20%;
+    }
+  }
+
+  span {
+    $ui-t-value: 28px;
+    display: inline-block;
+    width: $ui-t-value;
+    height: $ui-t-value;
+    border-radius: 50%;
+
+    &.dark {
+      border: 1px solid $color-gray-100;
+    }
+  }
+}
+
+.ui-widgets {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+  }
+
+  &__cell {
+    margin: 20px;
+  }
+
+  &__widget {
+    border: 1px solid #eee;
+    border-radius: 5px;
+
+    &--background {
+      .uikit-widget__content {
+        background: #eee;
+      }
+    }
+  }
+
+  &__title {
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  &__content {
+    padding: 5px;
+
+    &-inner {
+      margin: 5px;
     }
   }
 }
