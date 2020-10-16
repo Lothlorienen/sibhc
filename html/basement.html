@@ -34,7 +34,7 @@
 
 <!--  { {>core/favicon}}-->
 
-  <link rel="stylesheet" href="../css/main.css?v=2404">
+  <link rel="stylesheet" href="../css/main.css?v=2844">
 </head>
 
 <body class="page">
@@ -79,7 +79,68 @@
           </div>
           <!--Actions-->
           <div class="header-top__actions">
-            <button class="header-top__actions-btn js-popup"><span>Заказать звонок</span></button>
+            <button class="header-top__actions-btn js-popup-open" data-popup="call"><span>Заказать звонок</span></button>
+            <!--Popup-->
+            <div class="popup js-popup" data-popup-id="call">
+              <div class="popup__wrapper">
+                <div class="popup__inner">
+                  <button class="popup__close js-popup-close"></button>
+            
+                  <div class="popup__window">
+                    <div class="popup__content">
+                        <div class="popup-call">
+                          <div class="popup-call__success" style="display: none">
+                            <span class="popup-call__title">Звонок заказа</span>
+                            <p class="popup-call__text">Обычно мы перезваниваем в течени 10 минут</p>
+                            <div class="popup-call__submit">
+                              <button class="btn btn--large btn--primary js-popup-close">Закрыть</button>
+                            </div>
+                          </div>
+                          <div class="popup-call__failure" style="display: none">
+                            <span class="popup-call__title">Ошибка отправки</span>
+                            <p class="popup-call__text">К сожалению ваша заявка не была отправлена.<br>
+                              Но вы можете попробовать отправить еще раз,
+                              данные сохранились в форме.</p>
+                            <div class="popup-call__submit">
+                              <button class="btn btn--large btn--primary">Вернуться к заявке</button>
+                            </div>
+                          </div>
+                          <div class="popup-call__normal" style="display: block">
+                            <div class="popup-call__form">
+                              <span class="popup-call__title">Заказать звонок</span>
+                              <div class="popup-call__input">
+                                <div class="form-field">
+                                  <input type="text" class="form-field__input " placeholder="Фамилия и имя*">
+                                  
+                                </div>        </div>
+                              <div class="popup-call__input">
+                                <div class="form-field">
+                                  <input type="text" class="form-field__input " placeholder="Номер телефона*">
+                                  
+                                </div>        </div>
+                              <div class="popup-call__input">
+                                <div class="form-checkbox">
+                                  <label class="form-checkbox__label">
+                                    <input type="checkbox" class="form-checkbox__input">
+                                    <span class="form-checkbox__icon"><i class="form-checkbox__icon-container"></i></span>
+                                    <span class="form-checkbox__label-text">Я согласен с условиями обработки персональных данных</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="popup-call__submit">
+                              <button class="popup-call__submit-btn">Заказать</button>
+                            </div>
+                            <div class="popup-call__terms">
+                              <a class="popup-call__terms-link" href="#">Ознакомиться с условиями</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>    </div>
@@ -216,7 +277,7 @@
 
 </div>
 
-<script src="../js/vendors.js?v=2404" defer></script>
-  <script src="../js/main.js?v=2404" defer></script>
+<script src="../js/vendors.js?v=2844" defer></script>
+  <script src="../js/main.js?v=2844" defer></script>
 </body>
 </html>

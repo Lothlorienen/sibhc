@@ -34,483 +34,351 @@
 
 <!--  { {>core/favicon}}-->
 
-  <link rel="stylesheet" href="../css/main.css?v=2404">
+  <link rel="stylesheet" href="../css/main.css?v=2844">
 </head>
 
 <body class="page">
 <div class="preloader js-preloader"></div>
 <div class="page__inner">
 
-<main class="ui">
-  <div class="ui__container">
-    <aside class="ui__aside ui-aside">
-      <nav class="ui-aside__inner">
-        <ul class="ui-aside__nav">
-            <li>
-              <button class="ui-aside__link" data-id="ui-colors">Colors</button>
-            </li>
-            <li>
-              <button class="ui-aside__link" data-id="ui-buttons">Buttons</button>
-            </li>
-            <li>
-              <button class="ui-aside__link" data-id="ui-forms">Form Elements</button>
-            </li>
-            <li>
-              <button class="ui-aside__link" data-id="ui-popups">Popups</button>
-            </li>
-            <li>
-              <button class="ui-aside__link" data-id="ui-loaders">Loaders</button>
-            </li>
-        </ul>
+<div class="project-ui">
+  <div class="project-ui__container">
+    <aside class="project-ui__sidebar">
+      <nav>
+        <ul>
+          <li>
+            <a class="js-scroll-to" href="#colors">Colors</a>
+          </li>    <li>
+            <a class="js-scroll-to" href="#buttons">Buttons</a>
+          </li>    <li>
+            <a class="js-scroll-to" href="#form">Form Elements</a>
+          </li>    <li>
+            <a class="js-scroll-to" href="#popups">Popups</a>
+          </li>    <li>
+            <a class="js-scroll-to" href="#loaders">Loaders</a>
+          </li>    <li>
+            <a class="js-scroll-to" href="#widgets">Widgets</a>
+          </li>  </ul>
       </nav>
     </aside>
-    <section class="ui__main ui-main">
-      <header class="ui-main__header">
-        <h1 class="ui-main__title">UI Kit</h1>
+    <main class="project-ui__main">
+      <header class="project-ui__header">
+        <h1 class="project-ui__title">UI Kit</h1>
       </header>
-      <div class="ui-main__content">
-      <section class="ui-section" id="ui-colors">
-        <header class="ui-section__header">
-          <h2 class="ui-section__title">Colors</h2>
-        </header>
-        <div class="ui-section__content">
-          <ul class="ui-colors">
-                    <li>
-                      <table>
-                        <caption>Main</caption>
-                          <thead>
-                          <tr>
-                            <td>Name</td>
-                            <td>Color</td>
-                            <td>HEX</td>
-                            <td>RGB</td>
-                          </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>$color-primary</td>
-                              <td><span class style="background-color: #1B74FD;"></span></td>
-                              <td>#1B74FD</td>
-                              <td>rgb(0, 66, 255)</td>
-                            </tr>
-                            <tr>
-                              <td>$color-primary-variant</td>
-                              <td><span class style="background-color: #00B763;"></span></td>
-                              <td>#00B763</td>
-                              <td>rgb(0, 183, 99)</td>
-                            </tr>
-                            <tr>
-                              <td>$color-secondary</td>
-                              <td><span class style="background-color: #FD5800;"></span></td>
-                              <td>#FD5800</td>
-                              <td>rgb(253, 88, 0)</td>
-                            </tr>
-                            <tr>
-                              <td>$color-error</td>
-                              <td><span class style="background-color: #FF0000;"></span></td>
-                              <td>#FF0000</td>
-                              <td>rgb(255, 0, 0)</td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-                    <li>
-                      <table>
-                        <caption>Gray</caption>
-                          <thead>
-                          <tr>
-                            <td>Name</td>
-                            <td>Color</td>
-                            <td>HEX</td>
-                            <td>RGB</td>
-                          </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>$color-gray-100</td>
-                              <td><span class style="background-color: #363C4E;"></span></td>
-                              <td>#363C4E</td>
-                              <td>rgb(54, 60, 78)</td>
-                            </tr>
-                            <tr>
-                              <td>$color-gray-80</td>
-                              <td><span class style="background-color: #7C8292;"></span></td>
-                              <td>#7C8292</td>
-                              <td>rgb(113, 119, 132)</td>
-                            </tr>
-                            <tr>
-                              <td>$color-gray-60</td>
-                              <td><span class style="background-color: #C7CBD6;"></span></td>
-                              <td>#C7CBD6</td>
-                              <td>rgb(173, 179, 197)</td>
-                            </tr>
-                            <tr>
-                              <td>$color-gray-40</td>
-                              <td><span class style="background-color: #DFE3EC;"></span></td>
-                              <td>#DFE3EC</td>
-                              <td>rgb(223, 227, 236)</td>
-                            </tr>
-                            <tr>
-                              <td>$color-gray-20</td>
-                              <td><span class="dark" style="background-color: #F2F4F8;"></span></td>
-                              <td>#F2F4F8</td>
-                              <td>rgb(242, 244, 248)</td>
-                            </tr>
-                            <tr>
-                              <td>$color-gray-10</td>
-                              <td><span class="dark" style="background-color: #F6F9FF;"></span></td>
-                              <td>#F6F9FF</td>
-                              <td>rgb(246, 249, 255)</td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-                    <li>
-                      <table>
-                        <caption>Apex</caption>
-                          <thead>
-                          <tr>
-                            <td>Name</td>
-                            <td>Color</td>
-                            <td>HEX</td>
-                            <td>RGB</td>
-                          </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>$color-black</td>
-                              <td><span class style="background-color: #000000;"></span></td>
-                              <td>#000000</td>
-                              <td>rgb(0, 0, 0)</td>
-                            </tr>
-                            <tr>
-                              <td>$color-white</td>
-                              <td><span class="dark" style="background-color: #FFFFFF;"></span></td>
-                              <td>#FFFFFF</td>
-                              <td>rgb(255, 255, 255)</td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-          </ul>
-        </div>
-      </section>
-      <section class="ui-section" id="ui-buttons">
-        <header class="ui-section__header">
-          <h2 class="ui-section__title">Buttons</h2>
-        </header>
-        <div class="ui-section__content">
-          <ul class="ui-buttons">
-                    <li>
-                      <table>
-                        <caption>Default</caption>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div class="ui-buttons__container">
-                                        <button type="button" class="btn">normal</button>
-                                        <button type="button" class="btn btn--hover">hover</button>
-                                        <button type="button" class="btn btn--active">active</button>
-                                        <button type="button" class="btn btn--focus">focus</button>
-                                        <button type="button" class="btn btn--disabled" disabled aria-disabled="true">disabled</button>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-                    <li>
-                      <table>
-                        <caption>Primary</caption>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div class="ui-buttons__container">
-                                        <button type="button" class="btn btn--primary">normal</button>
-                                        <button type="button" class="btn btn--primary btn--hover">hover</button>
-                                        <button type="button" class="btn btn--primary btn--active">active</button>
-                                        <button type="button" class="btn btn--primary btn--focus">focus</button>
-                                        <button type="button" class="btn btn--primary btn--disabled" disabled aria-disabled="true">disabled</button>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div class="ui-buttons__container">
-                                        <button type="button" class="btn btn--primary-outline">normal</button>
-                                        <button type="button" class="btn btn--primary-outline btn--hover">hover</button>
-                                        <button type="button" class="btn btn--primary-outline btn--active">active</button>
-                                        <button type="button" class="btn btn--primary-outline btn--focus">focus</button>
-                                        <button type="button" class="btn btn--primary-outline btn--disabled" disabled aria-disabled="true">disabled</button>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-                    <li>
-                      <table>
-                        <caption>Secondary</caption>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div class="ui-buttons__container">
-                                        <button type="button" class="btn btn--secondary">normal</button>
-                                        <button type="button" class="btn btn--secondary btn--hover">hover</button>
-                                        <button type="button" class="btn btn--secondary btn--active">active</button>
-                                        <button type="button" class="btn btn--secondary btn--focus">focus</button>
-                                        <button type="button" class="btn btn--secondary btn--disabled" disabled aria-disabled="true">disabled</button>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div class="ui-buttons__container">
-                                        <button type="button" class="btn btn--secondary-outline">normal</button>
-                                        <button type="button" class="btn btn--secondary-outline btn--hover">hover</button>
-                                        <button type="button" class="btn btn--secondary-outline btn--active">active</button>
-                                        <button type="button" class="btn btn--secondary-outline btn--focus">focus</button>
-                                        <button type="button" class="btn btn--secondary-outline btn--disabled" disabled aria-disabled="true">disabled</button>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-                    <li>
-                      <table>
-                        <caption>Sizes</caption>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div class="ui-buttons__container">
-                                        <button type="button" class="btn btn--primary btn--large">large</button>
-                                        <button type="button" class="btn btn--primary">normal</button>
-                                        <button type="button" class="btn btn--primary btn--small">small</button>
-                                        <button type="button" class="btn btn--w100 btn--primary btn--w100">w100</button>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-          </ul>
-        </div>
-      </section>
-      <section class="ui-section" id="ui-forms">
-        <header class="ui-section__header">
-          <h2 class="ui-section__title">Form Elements</h2>
-        </header>
-        <div class="ui-section__content">
-          <ul class="ui-forms">
-                    <li>
-                      <table>
-                        <caption>Inputs</caption>
-                          <tbody>
-                            <tr>
-                              <td>
-                                  <div class="ui-inputs__container ui-inputs__container--row">
-                                      <div class="form-field">
-                                          <label class="form-field__label">Ваше имя</label>
-                                        <input type="text" class="form-field__input " placeholder="Иван Иван Иванович">
-                                      </div>
-                                      <div class="form-field form-error">
-                                          <label class="form-field__label">Ваш пароль</label>
-                                        <input type="password" class="form-field__input " placeholder="Не менее 6 символов">
-                                          <span class="form-field__message">Неверный пароль</span>
-                                      </div>
-                                  </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-                    <li>
-                      <table>
-                        <caption>Textarea</caption>
-                          <tbody>
-                            <tr>
-                              <td>
-                                  <div class="ui-inputs__container">
-                                      <div class="form-field">
-                                        <textarea class="form-textarea" placeholder="Иван Иван Иванович"></textarea>
-                                      </div>
-                                  </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-                    <li>
-                      <table>
-                        <caption>Checkboxes</caption>
-                          <tbody>
-                            <tr>
-                              <td>
-                                  <div class="ui-inputs__container ui-inputs__container--column">
-                                      <div class="form-checkbox">
-                                        <label class="form-checkbox__label">
-                                          <input type="checkbox" class="form-checkbox__input">
-                                          <span class="form-checkbox__icon-container"><i class="form-checkbox__icon"></i></span>
-                                          Example label
-                                        </label>
-                                      </div>
-                                      <div class="form-checkbox">
-                                        <label class="form-checkbox__label">
-                                          <input type="checkbox" class="form-checkbox__input" checked>
-                                          <span class="form-checkbox__icon-container"><i class="form-checkbox__icon"></i></span>
-                                          Example label
-                                        </label>
-                                      </div>
-                                  </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-                    <li>
-                      <table>
-                        <caption>Radio Buttons</caption>
-                          <tbody>
-                            <tr>
-                              <td>
-                                  <div class="ui-inputs__container ui-inputs__container--column">
-                                      <div class="form-radio">
-                                        <label class="form-radio__label">
-                                          <input class="form-radio__input" type="radio" name="radio-example">
-                                          <span class="form-radio__icon"></span> Example label</label>
-                                      </div>
-                                      <div class="form-radio">
-                                        <label class="form-radio__label">
-                                          <input class="form-radio__input" type="radio" name="radio-example" checked="checked">
-                                          <span class="form-radio__icon"></span> Example label</label>
-                                      </div>
-                                  </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-                    <li>
-                      <table>
-                        <caption>Select</caption>
-                          <tbody>
-                            <tr>
-                              <td>
-                              </td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-                    <li>
-                      <table>
-                        <caption>Switcher</caption>
-                          <tbody>
-                            <tr>
-                              <td>
-                                  <div class="ui-inputs__container ui-inputs__container--column">
-                                      <div class="form-switcher">
-                                        <input type="checkbox" class="form-switcher__input" aria-label="Example label">
-                                        <label class="form-switcher__label">
-                                          <span></span>
-                                        </label>
-                                      </div>
-                                      <div class="form-switcher">
-                                        <input type="checkbox" class="form-switcher__input" checked aria-label="Example label">
-                                        <label class="form-switcher__label">
-                                          <span></span>
-                                        </label>
-                                      </div>
-                                  </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-          </ul>
-        </div>
-      </section>
-      <section class="ui-section" id="ui-popups">
-        <header class="ui-section__header">
-          <h2 class="ui-section__title">Popups</h2>
-        </header>
-        <div class="ui-section__content">
-          <ul class="ui-popups">
-                    <li>
-                      <table>
-                        <caption>Default</caption>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div class="ui-buttons__container">
-                                    <button type="button" class="btn btn--small btn--primary js-popup-open" data-popup="example">Попап</button>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                      </table>
-                    </li>
-          </ul>
-        </div>
-      </section>
-      <section class="ui-section" id="ui-loaders">
-        <header class="ui-section__header">
-          <h2 class="ui-section__title">Loaders</h2>
-        </header>
-        <div class="ui-section__content">
-          <ul class="ui-loaders">
-                    <div class="loader">
-                      <div class="loader__circle">Loading...</div>
-                      <div class="ui-inputs__container ui-inputs__container--row">
-                          <div class="form-field">
-                              <label class="form-field__label">Ваше имя</label>
-                            <input type="text" class="form-field__input " placeholder="Иван Иван Иванович">
+      <div class="project-ui__content">
+        <!--Colors-->
+        <section class="project-ui__section" id="colors">
+          <header>
+            <h2 class="project-ui__section-title">Colors</h2>
+          </header>
+          <div class="project-ui__section-content">
+            <ul class="ui-colors">
+                <li>
+                  <table>
+                    <caption>Main</caption>
+                      <thead>
+                      <tr>
+                        <td>Name</td>
+                        <td>Color</td>
+                        <td>HEX</td>
+                        <td>RGB</td>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>$color-primary</td>
+                          <td><span class style="background-color: #feb22e;"></span></td>
+                          <td>#feb22e</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>$color-primary-hover</td>
+                          <td><span class style="background-color: #ffbc38;"></span></td>
+                          <td>#ffbc38</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </li>
+                <li>
+                  <table>
+                    <caption>Gray</caption>
+                      <thead>
+                      <tr>
+                        <td>Name</td>
+                        <td>Color</td>
+                        <td>HEX</td>
+                        <td>RGB</td>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>$color-gray-100</td>
+                          <td><span class style="background-color: #363C4E;"></span></td>
+                          <td>#363C4E</td>
+                          <td>rgb(54, 60, 78)</td>
+                        </tr>
+                        <tr>
+                          <td>$color-gray-80</td>
+                          <td><span class style="background-color: #7C8292;"></span></td>
+                          <td>#7C8292</td>
+                          <td>rgb(113, 119, 132)</td>
+                        </tr>
+                        <tr>
+                          <td>$color-gray-60</td>
+                          <td><span class style="background-color: #C7CBD6;"></span></td>
+                          <td>#C7CBD6</td>
+                          <td>rgb(173, 179, 197)</td>
+                        </tr>
+                        <tr>
+                          <td>$color-gray-40</td>
+                          <td><span class style="background-color: #DFE3EC;"></span></td>
+                          <td>#DFE3EC</td>
+                          <td>rgb(223, 227, 236)</td>
+                        </tr>
+                        <tr>
+                          <td>$color-gray-20</td>
+                          <td><span class="dark" style="background-color: #F2F4F8;"></span></td>
+                          <td>#F2F4F8</td>
+                          <td>rgb(242, 244, 248)</td>
+                        </tr>
+                        <tr>
+                          <td>$color-gray-10</td>
+                          <td><span class="dark" style="background-color: #F6F9FF;"></span></td>
+                          <td>#F6F9FF</td>
+                          <td>rgb(246, 249, 255)</td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </li>
+                <li>
+                  <table>
+                    <caption>Apex</caption>
+                      <thead>
+                      <tr>
+                        <td>Name</td>
+                        <td>Color</td>
+                        <td>HEX</td>
+                        <td>RGB</td>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>$color-black</td>
+                          <td><span class style="background-color: #000000;"></span></td>
+                          <td>#000000</td>
+                          <td>rgb(0, 0, 0)</td>
+                        </tr>
+                        <tr>
+                          <td>$color-white</td>
+                          <td><span class="dark" style="background-color: #FFFFFF;"></span></td>
+                          <td>#FFFFFF</td>
+                          <td>rgb(255, 255, 255)</td>
+                        </tr>
+                        <tr>
+                          <td>$color-error</td>
+                          <td><span class style="background-color: #ED143B;"></span></td>
+                          <td>#ED143B</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>$color-success</td>
+                          <td><span class style="background-color: #0BB578;"></span></td>
+                          <td>#0BB578</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                  </table>
+                </li>
+            </ul>
+          </div>
+        </section>
+        <!--Buttons-->
+        <section class="project-ui__section" id="buttons">
+          <header>
+            <h2 class="project-ui__section-title">Buttons</h2>
+          </header>
+          <div class="project-ui__section-content">
+            <ul>
+                <li class="project-ui__section-row">
+                    <a href="#" class="btn btn--large">.btn .btn--large</a>
+                    <a href="#" class="btn">.btn</a>
+                    <a href="#" class="btn btn--small">.btn .btn--small</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn--primary">.btn .btn--primary</a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn--w100">.btn .btn--w100</a>
+                </li>    </ul>
+          </div>
+        </section>
+        <!--Form-->
+        <section class="project-ui__section" id="form">
+          <header>
+            <h2 class="project-ui__section-title">Form Elements</h2>
+          </header>
+          <div class="project-ui__section-content">
+            <ul>
+                <li class="project-ui__section-row">
+                  <h3>Inputs</h3>
+                  <div class="form-field">
+                    <input type="text" class="form-field__input " placeholder="Фамилия и имя*">
+                    
+                  </div>  <div class="form-field form-error">
+                    <input type="text" class="form-field__input " placeholder="Фамилия и имя*">
+                    <span class="form-field__message">Ошибка с текстом</span>
+                  </div></li>
+                <li>
+                  <h3>Textarea</h3>
+                  <div class="form-field">
+                    <textarea class="form-textarea" placeholder="Большое текстовое поле"></textarea>
+                  </div></li>
+                <li class="project-ui__section-row">
+                  <h3>Checkboxes</h3>
+                  <div class="form-checkbox">
+                    <label class="form-checkbox__label">
+                      <input type="checkbox" class="form-checkbox__input">
+                      <span class="form-checkbox__icon"><i class="form-checkbox__icon-container"></i></span>
+                      <span class="form-checkbox__label-text">Example label</span>
+                    </label>
+                  </div>
+                  <div class="form-checkbox">
+                    <label class="form-checkbox__label">
+                      <input type="checkbox" class="form-checkbox__input" checked>
+                      <span class="form-checkbox__icon"><i class="form-checkbox__icon-container"></i></span>
+                      <span class="form-checkbox__label-text">Example label 2</span>
+                    </label>
+                  </div>
+                </li>
+                <li class="project-ui__section-row">
+                  <h3>Radio Buttons</h3>
+                  <div class="form-radio">
+                    <label class="form-radio__label">
+                      <input class="form-radio__input" type="radio" name="radio-example">
+                      <span class="form-radio__icon"></span> Example label</label>
+                  </div>  <div class="form-radio">
+                    <label class="form-radio__label">
+                      <input class="form-radio__input" type="radio" name="radio-example" checked="checked">
+                      <span class="form-radio__icon"></span> Example label 2</label>
+                  </div></li>
+                <li class="project-ui__section-row">
+                  <h3>Select</h3>
+                  <div class="form-field">
+                    <label class="form-field__label "></label>
+                    <select class="js-dropdown-box">
+                        <option value="1">Example text 1</option>
+                        <option value="2">Example text 2</option>
+                        <option value="3">Example text 3</option>
+                        <option value="4">Example text 4</option>
+                        <option value="5">Example text 5</option>
+                    </select>
+                  </div></li>
+                <li class="project-ui__section-row">
+                  <h3>Switcher</h3>
+                  <div class="form-switcher">
+                    <input type="checkbox" class="form-switcher__input" aria-label="Example label">
+                    <label class="form-switcher__label">
+                      <span></span>
+                    </label>
+                  </div>  <div class="form-switcher">
+                    <input type="checkbox" class="form-switcher__input" checked aria-label="Example label">
+                    <label class="form-switcher__label">
+                      <span></span>
+                    </label>
+                  </div></li>
+            </ul>
+          </div>
+        </section>
+        <!--Popups-->
+        <section class="project-ui__section" id="popups">
+          <header>
+            <h2 class="project-ui__section-title">Popups</h2>
+          </header>
+          <div class="project-ui__section-content">
+            <ul>
+                <li>
+                  <!--btn-->
+                    <a href="#" class="btn js-popup-open" data-popup="example">example</a>
+                  <!--content-->
+                  <div class="popup js-popup" data-popup-id="example">
+                    <div class="popup__wrapper">
+                      <div class="popup__inner">
+                        <button class="popup__close js-popup-close"></button>
+                  
+                        <div class="popup__window">
+                          <div class="popup__content">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam modi nemo nihil officia rerum tempore
+                              voluptatem?
                           </div>
-                          <div class="form-field form-error">
-                              <label class="form-field__label">Ваш пароль</label>
-                            <input type="password" class="form-field__input " placeholder="Не менее 6 символов">
-                              <span class="form-field__message">Неверный пароль</span>
-                          </div>
+                        </div>
                       </div>
                     </div>
-                    
-                    <div class="loader loader--trans">
-                      <div class="loader__circle">Loading...</div>
+                  </div>
+                </li>    </ul>
+          </div>
+        </section>
+        <!--Loaders-->
+        <section class="project-ui__section" id="loaders">
+          <header>
+            <h2 class="project-ui__section-title">Loaders</h2>
+          </header>
+          <div class="project-ui__section-content">
+            <ul>
+                <li>
+                  <div class="loader">
+                    <div class="loader__circle">Loading...</div>
+                    <div class="project-ui__section-row">
+                        <div class="form-field">
+                            <label class="form-field__label">Ваше имя</label>
+                          <input type="text" class="form-field__input " placeholder="Иван Иван Иванович">
+                        </div>
+                        <div class="form-field form-error">
+                            <label class="form-field__label">Ваш пароль</label>
+                          <input type="password" class="form-field__input " placeholder="Не менее 6 символов">
+                            <span class="form-field__message">Неверный пароль</span>
+                        </div>
                     </div>
-          </ul>
-        </div>
-      </section>
+                  </div>
+                </li>
+                
+                <li>
+                  <div class="loader loader--transparent">
+                    <div class="loader__circle">Loading...</div>
+                  </div>
+                </li>
+            </ul>
+          </div>
+        </section>
+        <!--Widgets-->
+        <section class="project-ui__section" id="widgets">
+          <header>
+            <h2 class="project-ui__section-title">Widgets</h2>
+          </header>
+          <div class="project-ui__section-content">
+            <ul>
+                <div class="ui-widgets__row">
+                <div class="ui-widgets__cell">
+                  <div class="ui-widgets__widget">
+                    <span class="ui-widgets__title">.widget-example</span>
+                    <div class="ui-widgets__content">
+                      <div class="ui-widgets__content-inner">
+                            Hello!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                
+            </ul>
+          </div>
+        </section>
       </div>
-    </section>
-  </div>
-</main>
-
-<div class="popup js-popup" data-popup-id="example">
-  <div class="popup__header">
-    <span class="popup__title">Base popup</span>
-    <button class="popup__close js-popup-close"></button>
-  </div>
-  <div class="popup__content">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam modi nemo nihil officia rerum tempore
-      voluptatem?
+    </main>
   </div>
 </div>
 
-<script defer>
-  window.onload = () => {
-    const $btn = $('.ui-aside__link');
-
-    $btn.on('click', function() {
-      const id = $(this).data('id');
-
-      $('html, body').animate({
-        scrollTop: $(`#${id}`).offset().top - 70,
-      }, 600);
-    });
-  };
-</script>
-
-<script src="../js/vendors.js?v=2404" defer></script>
-  <script src="../js/main.js?v=2404" defer></script>
+<script src="../js/vendors.js?v=2844" defer></script>
+  <script src="../js/main.js?v=2844" defer></script>
 </div></body>
 </html>
