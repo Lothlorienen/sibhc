@@ -1,5 +1,5 @@
-<div class="home-slider">
-  <div class="swiper-container js-home-slider">
+<div class="home-slider js-home-slider">
+  <div class="home-slider__content swiper-container js-home-slider__content">
     <ul class="swiper-wrapper">
       {{#each home.slider}}
         <li class="swiper-slide home-slide">
@@ -18,7 +18,7 @@
       {{/each}}
     </ul>
     <div class="home-slider__nav">
-      {{>components/slider-nav}}
+      {{>components/slider-nav js-class="home-slider"}}
     </div>
   </div>
 </div>

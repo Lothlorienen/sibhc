@@ -19,11 +19,13 @@
 
   &__btn {
     position: relative;
+    z-index: z(default);
     width: 42px;
     height: 42px;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: $color-gray-100;
     border-radius: 50%;
     @include transition;
 
@@ -34,6 +36,10 @@
     &.disabled {
       opacity: 0.35;
       cursor: default;
+
+      &:hover {
+        background-color: initial;
+      }
     }
 
     &--disabled {
@@ -41,8 +47,7 @@
       cursor: initial;
     }
 
-    color: $color-gray-100;
-    .slider-nav--white &{
+    .slider-nav--white & {
       color: $color-white;
     }
   }

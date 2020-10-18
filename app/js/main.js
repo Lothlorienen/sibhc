@@ -13,6 +13,9 @@ import './src/utils/mobile-debug';
 import './src/widgets/popups';
 import './src/widgets/example';
 import './src/widgets/header/header';
+//Sliders
+import './src/widgets/sliders/home-slider';
+import './src/widgets/sliders/sliders';
 
 import './src/app';
 

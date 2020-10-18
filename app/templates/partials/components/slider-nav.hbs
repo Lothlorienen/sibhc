@@ -1,12 +1,12 @@
 <div class="slider-nav{{#if mode}} slider-nav--{{mode}}{{/if}}">
   <div class="slider-nav__item">
-    <button class="slider-nav__btn js-slider-nav__prev"
+    <button class="slider-nav__btn{{#if js-class}} js-{{js-class}}__prev{{/if}}"
             type="button" aria-label="Предыдущий сайд.">
       {{>ui/svg name="action--arrow-left"}}
     </button>
   </div>
   <div class="slider-nav__item">
-    <button class="slider-nav__btn js-slider-nav__next"
+    <button class="slider-nav__btn{{#if js-class}} js-{{js-class}}__next{{/if}}"
             type="button" aria-label="Слудующий сайд.">
       {{>ui/svg name="action--arrow-right"}}
     </button>
