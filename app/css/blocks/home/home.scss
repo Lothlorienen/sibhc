@@ -18,7 +18,7 @@
 
   &__right {
     flex: 1 1 floor((100% / 3));
-    margin-left: 24px;
+    margin-left: 22.5px;
   }
 }
 
@@ -120,5 +120,19 @@
         background-color: $color-white;
       }
     }
+  }
+}
+
+.home-blog {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  > * + * {
+    margin-top: 22.5px;
+  }
+
+  &__item {
+    flex: 1 1 50%;
   }
 }

@@ -1,0 +1,12 @@
+<div class="blog-card{{#if white}} blog-card--white{{/if}}">
+  <a href="#" class="blog-card__link"></a>
+  <div class="blog-card__container">
+    <div class="blog-card__bg">{{#if img}}{{>components/image no-2x=true img=img ext=ext}}{{/if}}</div>
+    <div class="blog-card__content">
+      <span class="blog-card__title">{{title}}</span>
+      <p class="blog-card__text">
+        <a href="#">Подробнее</a>
+      </p>
+    </div>
+  </div>
+</div>
