@@ -27,24 +27,15 @@
     @include media(mobile) {
       font-size: 18px;
     }
+
+    &--center {
+      text-align: center;
+    }
   }
 
   &__content {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5;
-  }
-
-  ul {
-    padding-left: 40px;
-    list-style-type: '-';
-
-    @include media(mobile) {
-      padding-left: 25px;
-    }
-  }
-
-  li {
-    padding-left: 10px;
   }
 }

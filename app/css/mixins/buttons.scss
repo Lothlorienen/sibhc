@@ -24,26 +24,12 @@
 }
 
 @mixin btn-primary() {
-  color: $color-white;
   border-color: $color-primary;
   background-color: $color-primary;
 
   &:hover {
-    color: $color-white;
     border-color: $color-primary-hover;
     background-color: $color-primary-hover;
-  }
-}
-
-@mixin btn-primary-outline() {
-  color: $color-primary;
-  border-color: $color-primary;
-  background-color: transparent;
-
-  &:hover {
-    color: $color-white;
-    border-color: $color-primary;
-    background-color: $color-primary;
   }
 }
 
