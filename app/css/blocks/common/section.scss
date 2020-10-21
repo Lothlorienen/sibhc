@@ -1,0 +1,50 @@
+.section {
+  &__container {
+    padding: 70px 60px;
+    background-color: $color-white;
+
+    @include media(mobile) {
+      padding: 35px 25px;
+    }
+  }
+
+  &__header {
+    + * {
+      margin-top: 20px;
+
+      @include media(mobile) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+
+    @include media(mobile) {
+      font-size: 18px;
+    }
+  }
+
+  &__content {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  ul {
+    padding-left: 40px;
+    list-style-type: '-';
+
+    @include media(mobile) {
+      padding-left: 25px;
+    }
+  }
+
+  li {
+    padding-left: 10px;
+  }
+}

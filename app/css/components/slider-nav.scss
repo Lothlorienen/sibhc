@@ -29,6 +29,11 @@
     border-radius: 50%;
     @include transition;
 
+    @include media(mobile) {
+      width: 36px;
+      height: 36px;
+    }
+
     &:not(.disabled):hover {
       background: $color-gray-20;
     }
