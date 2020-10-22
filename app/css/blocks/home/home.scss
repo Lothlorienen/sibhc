@@ -275,10 +275,6 @@
     display: flex;
     justify-content: center;
     margin-top: 40px;
-
-    @include media(mobile) {
-      margin-top: 25px;
-    }
   }
 
   &__btn {
@@ -316,6 +312,57 @@
       @include media(tabletSmall, up) {
         margin-top: 55px;
       }
+    }
+  }
+}
+
+.home-about {
+  &__container {
+    @include media(tabletSmall, up) {
+      display: flex;
+    }
+  }
+
+  &__left,
+  &__right {
+    @include media(tabletSmall, up) {
+      flex: 1 1 50%;
+    }
+  }
+
+  &__right {
+    position: relative;
+
+    @include media(tabletSmall, up) {
+      margin-left: 24px;
+    }
+
+    @include media(tabletSmall) {
+      margin-top: 24px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 64%;
+    }
+
+    img {
+      @include fill;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .section__content {
+    > * + * {
+      margin-top: 20px;
+    }
+
+    a {
+      text-transform: uppercase;
+      font-weight: bold;
     }
   }
 }
