@@ -1,0 +1,39 @@
+.reason-item {
+  &__content {
+    padding: 60px 25px;
+  }
+
+  &__image {
+    position: relative;
+    max-width: 65px;
+    margin: 0 auto;
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+
+    img {
+      @include fill;
+      z-index: z(default) - 1;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: 45px 0 0;
+    color: $color-font-gray;
+    font-size: 14px;
+    line-height: 23px;
+
+    @include media(mobile) {
+      text-align: center;
+    }
+  }
+}

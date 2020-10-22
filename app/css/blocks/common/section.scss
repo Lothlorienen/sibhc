@@ -11,10 +11,6 @@
   &__header {
     + * {
       margin-top: 20px;
-
-      @include media(mobile) {
-        margin-top: 10px;
-      }
     }
   }
 
