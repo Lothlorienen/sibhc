@@ -475,6 +475,9 @@
 }
 
 .home-map {
+  content-visibility: auto;
+  contain-intrinsic-size: 600px;
+
   &__canvas {
     width: 100%;
     height: 600px;
