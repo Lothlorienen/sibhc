@@ -1,0 +1,37 @@
+<section class="section home-events">
+  <div class="container">
+    <div class="section__container">
+      <header class="section__header">
+        <h2 class="section__title section__title--center">Календарь мероприятий</h2>
+      </header>
+      <div class="section__content">
+        <ul class="home-events__list">
+          <li class="home-events__item">
+            {{>widgets/event-card
+                img="home/events/event-1"
+                time="1 октября, 2020"
+                title="Семинар-дегустация «Закваски и заварки для хлеба и хлебобулочных изделий»"
+            }}
+          </li>
+          <li class="home-events__item">
+            {{>widgets/event-card
+                img="home/events/event-2"
+                time="28 марта, 2020"
+                title="Бесплатный мастер-класс от Ивана Забавникова"
+            }}
+          </li>
+          <li class="home-events__item">
+            {{>widgets/event-card
+                img="home/events/event-3"
+                time="29 января, 2020"
+                title="Бесплатный мастер-класс от компании ЗАО «УНИГРА»."
+            }}
+          </li>
+        </ul>
+        <div class="section__action">
+          <a href="#" class="section__action-btn">Все мероприятия</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

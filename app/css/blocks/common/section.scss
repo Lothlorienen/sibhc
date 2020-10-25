@@ -42,4 +42,35 @@
       }
     }
   }
+
+  &__action {
+    @include media(mobile, up) {
+      display: flex;
+      justify-content: center;
+      margin-top: 55px;
+    }
+
+    @include media(mobile) {
+      margin-top: 45px;
+    }
+  }
+
+  &__action-btn {
+    @include btn-regular;
+    @include btn-base;
+    @include btn-primary;
+    font-size: 10px;
+    color: $color-font-dark;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    @include media(mobile, up) {
+      padding: 16px 30px 14px;
+      min-width: 255px;
+    }
+
+    @include media(mobile) {
+      width: 100%;
+    }
+  }
 }

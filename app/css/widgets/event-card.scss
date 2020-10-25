@@ -1,0 +1,79 @@
+.event-card {
+  &__container {
+    position: relative;
+
+    &:hover {
+      .event-card__content {
+        top: -5px;
+      }
+    }
+  }
+
+  &__link {
+    @include fill;
+    z-index: z(default);
+    display: block;
+
+    &:hover {
+      + * {
+        top: -5px;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    top: 0;
+    @include transition;
+  }
+
+  &__image {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 66%;
+    }
+
+    img {
+      @include fill;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    margin-top: 30px;
+  }
+
+  &__timetable {
+    font-size: 14px;
+
+  }
+
+  &__title {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  &__action {
+    margin-top: 15px;
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  &__btn {
+    position: relative;
+    z-index: z(default);
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $color-font-dark;
+    }
+  }
+}
