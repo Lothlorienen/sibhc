@@ -271,10 +271,6 @@
     }
   }
 
-  .section__content {
-    margin-top: 40px;
-  }
-
   .catalog-item {
     &__image {
       @include media(tabletSmall, up) {
@@ -456,12 +452,6 @@
       }
     }
   }
-
-  .section__content {
-    @include media(mobile, up) {
-      margin-top: 40px;
-    }
-  }
 }
 
 .home-events {
@@ -474,10 +464,8 @@
       grid-template-columns: 1fr;
     }
   }
+}
 
-  .section__content {
-    @include media(mobile, up) {
-      margin-top: 40px;
-    }
-  }
+.home-faq {
+
 }
