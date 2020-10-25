@@ -1,7 +1,7 @@
 .home-container {
-  padding: 22.5px 0;
+  //padding: 22.5px 0;
 
-  > * + * {
+  > * {
     margin-top: 22.5px;
   }
 }
@@ -471,5 +471,12 @@
     > * + * {
       margin-top: 2px;
     }
+  }
+}
+
+.home-map {
+  &__canvas {
+    width: 100%;
+    height: 600px;
   }
 }
