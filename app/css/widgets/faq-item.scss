@@ -6,6 +6,12 @@
     width: 100%;
     padding: 10px 20px;
     background-color: $color-gray-20;
+    cursor: pointer;
+    @include transition;
+
+    &:hover {
+      background-color: $color-gray-10;
+    }
   }
 
   &__order {
