@@ -467,5 +467,9 @@
 }
 
 .home-faq {
-
+  &__list {
+    > * + * {
+      margin-top: 2px;
+    }
+  }
 }
