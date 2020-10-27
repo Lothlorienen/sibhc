@@ -23,3 +23,5 @@ import './src/widgets/sliders/sliders';
 
 import './src/app';
 
+//Yandex Map
+import './src/widgets/ymap';
