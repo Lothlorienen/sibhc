@@ -1,6 +1,32 @@
-<div class="ui-widgets__row">
-  {{#> ui-kit/core/widget title='.widget-example'}}
-    Hello!
+<li class="ui-widgets__row">
+  {{#> ui-kit/core/widget title='.catalog-item' width=300 px=1}}
+    {{>widgets/catalog-item
+        img="home/catalog/ex"
+        ext="png"
+        title="Семена и Орехи"
+    }}
   {{/ui-kit/core/widget}}
-</div>
+  {{#> ui-kit/core/widget title='.reasons-item' width=400 px=1}}
+    {{>widgets/reasons-item
+        no-2x=true
+        img="home/reasons/icon-1"
+        ext="png"
+        text="Наличие собственного демонстрационного центра"
+    }}
+  {{/ui-kit/core/widget}}
+  {{#> ui-kit/core/widget title='.event-card' width=400 px=1}}
+    {{>widgets/event-card
+        img="home/events/event-1"
+        time="1 октября, 2020"
+        title="Семинар-дегустация «Закваски и заварки для хлеба и хлебобулочных изделий»"
+    }}
+  {{/ui-kit/core/widget}}
+  {{#> ui-kit/core/widget title='.faq-item' width=100}}
+    {{>widgets/faq-item
+        o="03."
+        q="Насколько безопасна ваша продукция, как осуществляется контроль качества?"
+        a="Все предлагаемая СибХЦ линейка ингредиентов и сырья проходит обязательный контроль качества и имеет соответствующие сертификаты. Наши ингредиенты позволяют производить вкусную и полезную хлебопекарную и кондитерскую продукцию и (важно) дают возможность упростить и ускорить технологический процесс. Партнерам предоставляется полное бесплатное технологическое сопровождение, т. е. от телефонных консультаций по хранению и применению продукта до участия нашего технолога в производственном процессе. Это является гарантией качества конечного продукта."
+    }}
+  {{/ui-kit/core/widget}}
+</li>
 

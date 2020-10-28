@@ -96,15 +96,11 @@
   }
 
   &__content {
-    padding: 0 $ui-container-gutters;
+    padding: 60px $ui-container-gutters;
     overflow-y: auto;
 
-    > *:first-child {
-      margin-top: 60px;
-    }
-
     > * + * {
-      margin: 30px 0;
+      margin: 30px 0 0;
     }
 
     @include media(tabletSmall) {

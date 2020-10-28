@@ -53,5 +53,5 @@ class Header {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  Header.initialize(document.querySelector('.js-header-menu'));
+  if (document.querySelector('.js-header-menu')) Header.initialize(document.querySelector('.js-header-menu'));
 });
