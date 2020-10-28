@@ -153,6 +153,11 @@ class YMap extends Widget {
 
         return null;
       }
+      else if ((cords.top > this.offset.top) && this.isMapInited) {
+        this.destroy();
+
+        return null;
+      }
     }
   }
 
