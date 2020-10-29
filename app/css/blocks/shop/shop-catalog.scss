@@ -1,0 +1,24 @@
+.shop-catalog {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include media(tabletSmall) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media(mobile) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    background-color: $color-white;
+    border: 1px solid $color-gray-20;
+    @include transition;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}

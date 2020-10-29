@@ -245,32 +245,6 @@
 }
 
 .home-catalog {
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  &__item {
-    flex: 1 1 floor(100% / 3);
-    max-width: floor(100% / 3);
-    border: 1px solid $color-gray-20;
-    @include transition;
-
-    @include media(tabletSmall) {
-      flex: 1 1 50%;
-      max-width: 50%;
-    }
-
-    @include media(mobile) {
-      flex: 1 1 100%;
-      max-width: 100%;
-    }
-
-    &:hover {
-      border-color: transparent;
-    }
-  }
-
   .catalog-item {
     &__image {
       @include media(tabletSmall, up) {
@@ -285,6 +259,9 @@
     }
 
     &__title {
+      font-size: 18px;
+      text-transform: uppercase;
+
       @include media(tabletSmall, up) {
         margin-top: 55px;
       }

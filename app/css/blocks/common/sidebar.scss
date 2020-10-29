@@ -4,6 +4,7 @@
 
     &--parent {
       position: relative;
+      z-index: z(default) + 1;
 
       &:focus,
       &:focus-within,
@@ -26,6 +27,10 @@
         }
 
         .sidebar-list__submenu {
+          @include media(tabletSmall, up) {
+            @include shadow(md);
+          }
+
           @include media(tabletSmall) {
             max-height: 200px;
           }
