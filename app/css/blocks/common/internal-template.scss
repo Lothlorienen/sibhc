@@ -1,0 +1,55 @@
+.internal-template {
+  @extend .container;
+
+  &--sidebar-enabled {
+    display: grid;
+    grid-template-areas: 'aside main';
+    grid-template-columns: minmax(200px, 280px) minmax(280px, 1fr);
+    gap: 24px;
+    padding-top: 30px;
+    padding-bottom: 60px;
+
+    @include media(tabletSmall) {
+      grid-template-areas: 'main' 'aside';
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__sidebar {
+    grid-area: aside;
+
+    > * + * {
+      margin-top: 24px;
+    }
+  }
+
+  &__container {
+    grid-area: main;
+    padding-top: 20px;
+
+    > :first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__header {
+    margin-top: 22.5px;
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 32px;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    margin-top: 22.5px;
+
+    > * + * {
+      margin-top: 22.5px;
+    }
+  }
+}

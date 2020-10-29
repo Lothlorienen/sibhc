@@ -1,0 +1,25 @@
+.page-breadcrumbs {
+  font-size: 12px;
+  font-weight: 400;
+  color: $color-gray-80;
+
+  &__item {
+    &::after {
+      content: '-';
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    &--current {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    &:hover {
+      color: $color-gray-100;
+    }
+  }
+}

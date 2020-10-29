@@ -45,7 +45,10 @@
     padding: 13px 12px 13px 23px;
     font-size: 14px;
     line-height: normal;
-    white-space: nowrap;
+
+    @include media(mobile, up) {
+      white-space: nowrap;
+    }
 
     &:focus-within,
     &:hover {
@@ -83,6 +86,10 @@
     .sidebar-list__link {
       @include media(tabletSmall) {
         padding-left: 46px;
+      }
+
+      @include media(mobile) {
+        padding-left: 36px;
       }
     }
   }

@@ -3,100 +3,24 @@
 {{> layout/head page-title="Contacts"}}
 
 {{> layout/header }}
-<div class="inner-container inner-container--sidebar-enabled">
-  <aside class="inner-container__sidebar">
-    {{#>widgets/sidebar-widget title="Каталог товаров"}}
-      <ul class="sidebar-list">
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-        <li class="sidebar-list__item sidebar-list__item--parent">
-          <a class="sidebar-list__link" href="#">Пункт меню <i class="icon-arrowRight"></i></a>
-          <ul class="sidebar-list__submenu">
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Пункт вложенного меню</a>
-            </li>
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Еще один пункт вложенного меню</a>
-            </li>
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
-            </li>
-          </ul>
-        </li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-        <li class="sidebar-list__item sidebar-list__item--parent">
-          <a class="sidebar-list__link" href="#">Пункт меню <i class="icon-arrowRight"></i></a>
-          <ul class="sidebar-list__submenu">
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Пункт вложенного меню</a>
-            </li>
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Еще один пункт вложенного меню</a>
-            </li>
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
-            </li>
-          </ul>
-        </li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-      </ul>
-    {{/widgets/sidebar-widget}}
-    {{#>widgets/sidebar-widget title="Производители"}}
-      <ul class="sidebar-list">
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
-        <li class="sidebar-list__item sidebar-list__item--parent">
-          <a class="sidebar-list__link" href="#">Пункт меню <i class="icon-arrowRight"></i></a>
-          <ul class="sidebar-list__submenu">
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Пункт вложенного меню</a>
-            </li>
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Еще один пункт вложенного меню</a>
-            </li>
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
-            </li>
-          </ul>
-        </li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
-        <li class="sidebar-list__item sidebar-list__item--parent">
-          <a class="sidebar-list__link" href="#">Пункт меню <i class="icon-arrowRight"></i></a>
-          <ul class="sidebar-list__submenu">
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Пункт вложенного меню</a>
-            </li>
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Еще один пункт вложенного меню</a>
-            </li>
-            <li class="sidebar-list__item">
-              <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
-            </li>
-          </ul>
-        </li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
-        <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
-      </ul>
-    {{/widgets/sidebar-widget}}
-    {{#>widgets/sidebar-widget}}
-      {{>widgets/sidebar-banner
-          title="Открытые мастер-классы СибХЦ"
-          text="На XVII Сибирском форуме хлебопечения пройдут открытые мастер-классы СибХЦ"
-          img="sidebar/banner/bg"
-          ext="png"
-      }}
-    {{/widgets/sidebar-widget}}
+<div class="internal-template internal-template--sidebar-enabled">
+  <aside class="internal-template__sidebar">
+    {{>blocks/common/sidebar}}
   </aside>
-  <main class="inner-container__content"></main>
+  <main class="internal-template__container">
+    <div class="internal-template__breadcrumbs">
+      <div class="page-breadcrumbs">
+        <span class="page-breadcrumbs__item"><a class="page-breadcrumbs__link" href="#">СибХЦ</a></span>
+        <span class="page-breadcrumbs__item page-breadcrumbs__item--current">Контакты</span>
+      </div>
+    </div>
+    <div class="internal-template__header">
+      <h1 class="internal-template__title">Контакты</h1>
+    </div>
+    <div class="internal-template__content">
+      {{>blocks/contacts/main}}
+      {{>blocks/contacts/map}}
+    </div>
+  </main>
 </div>
 {{> layout/footer }}
