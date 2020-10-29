@@ -1,0 +1,23 @@
+.inner-container {
+  @extend .container;
+
+  &--sidebar-enabled {
+    display: grid;
+    grid-template-areas: 'sidebar main';
+    grid-template-columns: minmax(200px, 280px) minmax(280px, 1fr);
+    gap: 24px;
+    padding: 30px 0 60px;
+
+    @include media(tabletSmall) {
+      grid-template-areas: 'main' 'sidebar';
+      grid-template-columns: 1fr;
+      padding: 30px 12px 60px;
+    }
+  }
+
+  &__sidebar {
+    > * + * {
+      margin-top: 24px;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<div class="sidebar-widget">
+  {{#if title}}
+    <div class="sidebar-widget__header">
+      <span class="sidebar-widget__title">{{title}}</span>
+    </div>
+  {{/if}}
+  <div class="sidebar-widget__container">
+    {{>@partial-block}}
+  </div>
+</div>

@@ -1,0 +1,13 @@
+.sidebar-widget {
+  @extend .bg-white;
+
+  &__header {
+    padding: 20px 23px;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: normal;
+  }
+}

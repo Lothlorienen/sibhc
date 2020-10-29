@@ -2,5 +2,5 @@
   <span class="contacts-item__title">{{title}}</span>
   {{#if text}}<span class="contacts-item__text">{{text}}</span>
   {{else}}<a class="contacts-item__link" href="{{href}}">{{label}}</a>{{/if}}
-  <a class="contacts-item__link" href="{{href-2}}">{{label-2}}</a>
+  {{#if href-2}}<a class="contacts-item__link" href="{{href-2}}">{{label-2}}</a>{{/if}}
 </div>
