@@ -59,6 +59,19 @@
     &:hover {
       color: $color-primary;
     }
+
+    &--active {
+      color: $color-primary;
+      padding-left: 21px;
+      border-left: 2px solid $color-primary;
+
+      .icon-arrowRight {
+        &::after,
+        &::before {
+          background-color: $color-primary;
+        }
+      }
+    }
   }
 
   &__submenu {
