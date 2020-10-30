@@ -47,4 +47,13 @@
     font-size: 17px;
     font-weight: bold;
   }
+
+  &__description {
+    margin-top: 25px;
+    font-size: 14px;
+
+    span {
+      font-weight: bold;
+    }
+  }
 }
