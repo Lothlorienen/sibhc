@@ -18,6 +18,17 @@ html {
   }
 }
 
+.container-medium {
+  width: 100%;
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 12px;
+
+  @include media(mobile) {
+    padding: 0 15px;
+  }
+}
+
 .container-small {
   width: 100%;
   max-width: 794px;

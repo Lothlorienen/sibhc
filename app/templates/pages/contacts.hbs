@@ -2,7 +2,7 @@
 
 {{> layout/head page-title="Контакты"}}
 
-{{> layout/header current-page="contacts"}}
+{{> layout/header internal-template=true current-page="contacts"}}
 <div class="internal-template internal-template--sidebar-enabled">
   <aside class="internal-template__sidebar">
     {{>blocks/common/sidebar}}
@@ -23,4 +23,4 @@
     </div>
   </main>
 </div>
-{{> layout/footer }}
+{{> layout/footer internal-template=true }}

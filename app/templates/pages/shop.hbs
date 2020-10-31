@@ -1,8 +1,8 @@
 {{!Каталог товаров}}
 
-{{> layout/head page-title="Каталог товаров"}}
+{{>layout/head page-title="Каталог товаров"}}
 
-{{> layout/header current-page="shop"}}
+{{>layout/header internal-template=true current-page="shop"}}
 <div class="internal-template internal-template--sidebar-enabled">
   <aside class="internal-template__sidebar">
     {{>blocks/common/sidebar}}
@@ -22,4 +22,4 @@
     </div>
   </main>
 </div>
-{{> layout/footer }}
+{{>layout/footer internal-template=true}}

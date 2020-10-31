@@ -1,7 +1,24 @@
 {{!404}}
 
-{{> layout/head page-title="404"}}
+{{>layout/head page-title="404"}}
 
-{{> layout/header }}
+{{>layout/header}}
 
-{{> layout/footer }}
+<section class="error-template">
+  <div class="container-medium">
+    <div class="error-template__container">
+      <div class="error-template__content">
+        <h1 class="error-template__title">Страница не найдена</h1>
+        <p class="error-template__text">Такой страницы больше не существует</p>
+        <div class="error-template__action">
+          <a class="error-template__btn" href="#">Перейти на главную</a>
+        </div>
+      </div>
+      <div class="error-template__image">
+        {{>components/image no-2x=true img='404/error' ext="png"}}
+      </div>
+    </div>
+  </div>
+</section>
+
+{{>layout/footer}}

@@ -14,7 +14,7 @@
 
   &:hover,
   &--hover {
-    color: $color-white;
+    color: $color-font-gray;
     background-color: $color-primary-hover;
     border-color: $color-primary-hover;
   }
@@ -46,13 +46,13 @@
 
   // Primary
   &--primary {
-    color: $color-white;
+    color: $color-font-gray;
     background-color: $color-primary;
     border: 1px solid $color-primary;
 
     &:hover {
       color: $color-primary;
-      background-color: $color-white;
+      background-color: transparent;
     }
   }
 }
