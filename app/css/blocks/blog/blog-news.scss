@@ -1,0 +1,20 @@
+.blog-news {
+  &__item {
+    margin-top: 30px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    @include media(mobile) {
+      margin-top: 40px;
+    }
+  }
+}
