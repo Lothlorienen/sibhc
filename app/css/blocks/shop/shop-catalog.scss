@@ -21,4 +21,15 @@
       border-color: transparent;
     }
   }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+    @include media(mobile) {
+      margin-top: 40px;
+    }
+  }
 }

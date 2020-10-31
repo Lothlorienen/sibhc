@@ -1,0 +1,25 @@
+{{!Каталог товаров / Производитель}}
+
+{{> layout/head page-title="Каталог товаров / Производитель"}}
+
+{{> layout/header current-page="shop"}}
+<div class="internal-template internal-template--sidebar-enabled">
+  <aside class="internal-template__sidebar">
+    {{>blocks/common/sidebar active-cat-simple=1}}
+  </aside>
+  <main class="internal-template__container">
+    <div class="internal-template__breadcrumbs">
+      <div class="page-breadcrumbs">
+        <span class="page-breadcrumbs__item"><a class="page-breadcrumbs__link" href="#">СибХЦ</a></span>
+        <span class="page-breadcrumbs__item page-breadcrumbs__item--current">Производитель</span>
+      </div>
+    </div>
+    <div class="internal-template__header">
+      <h1 class="internal-template__title internal-template__title--big">Производитель</h1>
+    </div>
+    <div class="internal-template__content">
+      {{>blocks/shop/brand}}
+    </div>
+  </main>
+</div>
+{{> layout/footer }}
