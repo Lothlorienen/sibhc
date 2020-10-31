@@ -1,45 +1,59 @@
 {{#>widgets/sidebar-widget title="Каталог товаров"}}
   <ul class="sidebar-list">
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link{{#if active-cat-simple}} sidebar-list__link--active{{/if}}" href="#">Категория товара</a></li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
     <li class="sidebar-list__item sidebar-list__item--parent">
-      <a class="sidebar-list__link{{#if active-cat}} sidebar-list__link--active{{/if}}" href="#">Пункт меню <i class="icon-arrowRight"></i></a>
+      <a class="sidebar-list__link{{#if active-cat}} sidebar-list__link--active{{/if}}" href="#">Категория товара <i class="icon-arrowRight"></i></a>
       <ul class="sidebar-list__submenu">
         <li class="sidebar-list__item">
-          <a href="#" class="sidebar-list__link">Пункт вложенного меню</a>
+          <a href="#" class="sidebar-list__link">Категория товара</a>
         </li>
         <li class="sidebar-list__item">
-          <a href="#" class="sidebar-list__link{{#if active-cat-2}} sidebar-list__link--active{{/if}}">Еще один пункт вложенного меню</a>
+          <a href="#" class="sidebar-list__link{{#if active-cat-2}} sidebar-list__link--active{{/if}}">Еще одна категория товара</a>
         </li>
         <li class="sidebar-list__item">
           <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
         </li>
       </ul>
     </li>
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
     <li class="sidebar-list__item sidebar-list__item--parent">
-      <a class="sidebar-list__link" href="#">Пункт меню <i class="icon-arrowRight"></i></a>
+      <a class="sidebar-list__link{{#if active-cat}} sidebar-list__link--active{{/if}}" href="#">Категория товара <i class="icon-arrowRight"></i></a>
       <ul class="sidebar-list__submenu">
         <li class="sidebar-list__item">
-          <a href="#" class="sidebar-list__link">Пункт вложенного меню</a>
+          <a href="#" class="sidebar-list__link">Категория товара</a>
         </li>
         <li class="sidebar-list__item">
-          <a href="#" class="sidebar-list__link">Еще один пункт вложенного меню</a>
+          <a href="#" class="sidebar-list__link{{#if active-cat-2}} sidebar-list__link--active{{/if}}">Еще одна категория товара</a>
         </li>
         <li class="sidebar-list__item">
           <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
         </li>
       </ul>
     </li>
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
-    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Пункт меню</a></li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+    <li class="sidebar-list__item sidebar-list__item--parent">
+      <a class="sidebar-list__link" href="#">Категория товара <i class="icon-arrowRight"></i></a>
+      <ul class="sidebar-list__submenu">
+        <li class="sidebar-list__item">
+          <a href="#" class="sidebar-list__link">Категория товара</a>
+        </li>
+        <li class="sidebar-list__item">
+          <a href="#" class="sidebar-list__link">Еще одна категория товара</a>
+        </li>
+        <li class="sidebar-list__item">
+          <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
+        </li>
+      </ul>
+    </li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+    <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
   </ul>
 {{/widgets/sidebar-widget}}
 {{#>widgets/sidebar-widget title="Производители"}}
@@ -47,35 +61,7 @@
     <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
     <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
     <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
-    <li class="sidebar-list__item sidebar-list__item--parent">
-      <a class="sidebar-list__link" href="#">Пункт меню <i class="icon-arrowRight"></i></a>
-      <ul class="sidebar-list__submenu">
-        <li class="sidebar-list__item">
-          <a href="#" class="sidebar-list__link">Пункт вложенного меню</a>
-        </li>
-        <li class="sidebar-list__item">
-          <a href="#" class="sidebar-list__link">Еще один пункт вложенного меню</a>
-        </li>
-        <li class="sidebar-list__item">
-          <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
-        </li>
-      </ul>
-    </li>
     <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
-    <li class="sidebar-list__item sidebar-list__item--parent">
-      <a class="sidebar-list__link" href="#">Пункт меню <i class="icon-arrowRight"></i></a>
-      <ul class="sidebar-list__submenu">
-        <li class="sidebar-list__item">
-          <a href="#" class="sidebar-list__link">Пункт вложенного меню</a>
-        </li>
-        <li class="sidebar-list__item">
-          <a href="#" class="sidebar-list__link">Еще один пункт вложенного меню</a>
-        </li>
-        <li class="sidebar-list__item">
-          <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
-        </li>
-      </ul>
-    </li>
     <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
     <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
     <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
