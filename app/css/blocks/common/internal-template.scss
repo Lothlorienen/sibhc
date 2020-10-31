@@ -1,6 +1,4 @@
 .internal-template {
-  @extend .container;
-
   &--sidebar-enabled {
     display: grid;
     grid-template-areas: 'aside main';
@@ -8,10 +6,15 @@
     gap: 24px;
     padding-top: 30px;
     padding-bottom: 60px;
+    @extend .container;
 
     @include media(tabletSmall) {
       grid-template-areas: 'main' 'aside';
       grid-template-columns: 1fr;
+    }
+
+    .internal-template__container {
+      grid-area: main;
     }
   }
 
@@ -24,8 +27,11 @@
   }
 
   &__container {
-    grid-area: main;
-    padding-top: 20px;
+    padding: 40px 0 80px;
+
+    @include media(mobile) {
+      padding: 20px 0 40px;
+    }
 
     > :first-child {
       margin-top: 0;
