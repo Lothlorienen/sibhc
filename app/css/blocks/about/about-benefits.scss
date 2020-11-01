@@ -1,0 +1,12 @@
+.about-benefits {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    margin-top: 20px;
+  }
+
+  &__item {
+    padding: 23px 15px;
+    border: 1px solid $color-gray-20;
+  }
+}

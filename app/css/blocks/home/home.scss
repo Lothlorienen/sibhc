@@ -354,6 +354,7 @@
   &__item {
     flex: 1 1 floor(100% / 3);
     max-width: floor(100% / 3);
+    padding: 60px 25px;
     border: 1px solid $color-gray-20;
     @include transition;
 

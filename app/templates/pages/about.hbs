@@ -4,23 +4,24 @@
 
 {{> layout/header internal-template=true current-page="about"}}
 
-<main class="internal-template">
-  <div class="container">
-    <div class="internal-template__container">
-      <div class="internal-template__breadcrumbs">
-        <div class="page-breadcrumbs">
-          <span class="page-breadcrumbs__item"><a class="page-breadcrumbs__link" href="#">СибХЦ</a></span>
-          <span class="page-breadcrumbs__item page-breadcrumbs__item--current">О Компании</span>
-        </div>
-      </div>
-      <div class="internal-template__header">
-        <h1 class="internal-template__title internal-template__title--big">О Компании</h1>
-      </div>
-      <div class="internal-template__content">
-
+<div class="internal-template internal-template--sidebar-enabled">
+  <aside class="internal-template__sidebar">
+    {{>blocks/common/sidebar}}
+  </aside>
+  <main class="internal-template__container">
+    <div class="internal-template__breadcrumbs">
+      <div class="page-breadcrumbs">
+        <span class="page-breadcrumbs__item"><a class="page-breadcrumbs__link" href="#">СибХЦ</a></span>
+        <span class="page-breadcrumbs__item page-breadcrumbs__item--current">О Компании</span>
       </div>
     </div>
-  </div>
-</main>
+    <div class="internal-template__header">
+      <h1 class="internal-template__title">О Компании</h1>
+    </div>
+    <div class="internal-template__content">
+      {{>blocks/about/main}}
+    </div>
+  </main>
+</div>
 
 {{> layout/footer internal-template=true }}

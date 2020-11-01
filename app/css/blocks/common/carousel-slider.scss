@@ -1,0 +1,69 @@
+.carousel-slider {
+  height: 100%;
+
+  @include media(tabletSmall) {
+    max-width: calc(100vw - 24px);
+  }
+
+  @include media(mobile) {
+    max-width: calc(100vw - 30px);
+  }
+
+  &__nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    left: 20px;
+    z-index: z(default);
+    transform: translateY(-50%);
+
+    @include media(mobile) {
+      display: none;
+    }
+  }
+
+  &__pagination {
+    @include media(mobile, up) {
+      display: none;
+    }
+
+    @include media(mobile) {
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+    }
+
+    span {
+      @include media(mobile) {
+        margin: 0 2px;
+        @include transition;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background: $color-primary;
+    }
+  }
+
+  .swiper-container {
+    position: relative;
+    height: 100%;
+  }
+
+  .slider-nav {
+    justify-content: space-between;
+
+    &__btn {
+      color: $color-white;
+      background-color: transparentize($color-black, 0.5);
+
+      &:hover {
+        background-color: transparentize($color-black, 0.2);
+      }
+
+      &.disabled {
+        opacity: 0;
+      }
+    }
+  }
+}

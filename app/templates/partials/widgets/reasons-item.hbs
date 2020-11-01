@@ -1,6 +1,6 @@
 <div class="reason-item">
   <div class="reason-item__content">
-    <div class="reason-item__image">
+    <div class="reason-item__image{{#if center}} reason-item__image--center{{/if}}">
       {{#if img}}{{>components/image no-2x=true img=img ext=ext}}{{/if}}
     </div>
     <p class="reason-item__text">{{{text}}}</p>
