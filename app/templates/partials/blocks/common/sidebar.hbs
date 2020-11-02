@@ -5,8 +5,9 @@
     <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
     <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
     <li class="sidebar-list__item sidebar-list__item--parent">
-      <a class="sidebar-list__link{{#if active-cat}} sidebar-list__link--active{{/if}}" href="#">Категория товара <i class="icon-arrowRight"></i></a>
-      <ul class="sidebar-list__submenu">
+      <a class="sidebar-list__link{{#if active-cat}} sidebar-list__link--active{{/if}}" href="#"
+         aria-haspopup="true">Категория товара <i class="icon-arrowRight"></i></a>
+      <ul class="sidebar-list__submenu" aria-label="Подменю">
         <li class="sidebar-list__item">
           <a href="#" class="sidebar-list__link">Категория товара</a>
         </li>
@@ -19,13 +20,13 @@
       </ul>
     </li>
     <li class="sidebar-list__item sidebar-list__item--parent">
-      <a class="sidebar-list__link{{#if active-cat}} sidebar-list__link--active{{/if}}" href="#">Категория товара <i class="icon-arrowRight"></i></a>
-      <ul class="sidebar-list__submenu">
+      <a class="sidebar-list__link" href="#" aria-haspopup="true">Категория товара <i class="icon-arrowRight"></i></a>
+      <ul class="sidebar-list__submenu" aria-label="Подменю">
         <li class="sidebar-list__item">
           <a href="#" class="sidebar-list__link">Категория товара</a>
         </li>
         <li class="sidebar-list__item">
-          <a href="#" class="sidebar-list__link{{#if active-cat-2}} sidebar-list__link--active{{/if}}">Еще одна категория товара</a>
+          <a href="#" class="sidebar-list__link">Еще одна категория товара</a>
         </li>
         <li class="sidebar-list__item">
           <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
@@ -37,8 +38,8 @@
     <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
     <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
     <li class="sidebar-list__item sidebar-list__item--parent">
-      <a class="sidebar-list__link" href="#">Категория товара <i class="icon-arrowRight"></i></a>
-      <ul class="sidebar-list__submenu">
+      <a class="sidebar-list__link" href="#" aria-haspopup="true">Категория товара <i class="icon-arrowRight"></i></a>
+      <ul class="sidebar-list__submenu" aria-label="Подменю">
         <li class="sidebar-list__item">
           <a href="#" class="sidebar-list__link">Категория товара</a>
         </li>
