@@ -1,27 +1,81 @@
 .slider-thumbs {
   position: relative;
-  display: flex;
-  max-width: 780px;
   margin-top: 20px;
 
-  &__nav {
-    @extend .carousel-slider__nav;
+  &__thumbs {
+    margin-top: 10px;
+
+    .swiper-slide {
+      height: 100%;
+
+      &::before {
+        @include fill;
+        z-index: z(default);
+        content: '';
+        display: block;
+        background-color: transparentize($color-black, 0.5);
+      }
+
+      &-thumb-active {
+        &::before {
+          background-color: transparent;
+        }
+      }
+    }
   }
 
-  .slider-nav {
-    justify-content: space-between;
+  &__nav {
+    --swiper-navigation-size: 20px;
+    --swiper-navigation-color: #{$color-white};
 
-    &__btn {
-      color: $color-white;
-      background-color: transparentize($color-black, 0.5);
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+    background-color: transparentize($color-black, 0.5);
+    border-radius: 50%;
+    @include transition;
 
-      &:hover {
-        background-color: transparentize($color-black, 0.2);
+    @include media(mobile) {
+      --swiper-navigation-size: 12px;
+
+      width: 30px;
+      height: 30px;
+    }
+
+    &:hover {
+      background-color: transparentize($color-black, 0.1);
+    }
+
+    &::after {
+      position: relative;
+    }
+  }
+
+  .swiper-button-next {
+    &::after {
+      left: 2px;
+
+      @include media(mobile) {
+        left: 1px;
       }
+    }
+  }
 
-      &.disabled {
-        opacity: 0;
-      }
+  .swiper-slide {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      padding-top: 64%;
+    }
+
+    img {
+      @include fill;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
     }
   }
 }

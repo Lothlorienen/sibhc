@@ -9,6 +9,18 @@
     }
   }
 
+  &__left {
+    max-width: 780px;
+
+    @include media(tabletSmall) {
+      max-width: calc(100vw - 24px);
+    }
+
+    @include media(mobile) {
+      max-width: calc(100vw - 30px);
+    }
+  }
+
   &__right {
     > * + * {
       margin-top: 48px;
