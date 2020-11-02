@@ -1,0 +1,27 @@
+.slider-thumbs {
+  position: relative;
+  display: flex;
+  max-width: 780px;
+  margin-top: 20px;
+
+  &__nav {
+    @extend .carousel-slider__nav;
+  }
+
+  .slider-nav {
+    justify-content: space-between;
+
+    &__btn {
+      color: $color-white;
+      background-color: transparentize($color-black, 0.5);
+
+      &:hover {
+        background-color: transparentize($color-black, 0.2);
+      }
+
+      &.disabled {
+        opacity: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.event-content {
+  &__container {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    gap: 48px 24px;
+
+    @include media(tabletSmall) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__right {
+    > * + * {
+      margin-top: 48px;
+    }
+  }
+
+  &__title {
+    display: block;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: -0.04em;
+  }
+}

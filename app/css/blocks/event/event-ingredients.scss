@@ -1,0 +1,8 @@
+.event-ingredients {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+  }
+}

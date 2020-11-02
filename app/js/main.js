@@ -22,6 +22,7 @@ import './src/widgets/header/header';
 //Sliders
 import './src/widgets/sliders/home-slider';
 import './src/widgets/sliders/carousel-slider';
+import './src/widgets/sliders/slider-thumbs';
 import './src/widgets/sliders/sliders';
 
 import './src/app';

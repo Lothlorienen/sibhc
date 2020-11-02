@@ -1,0 +1,44 @@
+.related-event {
+  position: relative;
+  height: 100%;
+
+  &__link {
+    @include fill;
+    z-index: z(default);
+    display: block;
+
+    &:hover {
+      + * {
+        bottom: 5px;
+
+        .related-event__title {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    bottom: 0;
+    padding: 24px;
+    height: 100%;
+    background-color: $color-white;
+    @include transition;
+  }
+
+  &__date {
+    color: $color-gray-60;
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  &__title {
+    display: block;
+    margin: 10px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    @include transition;
+  }
+}
