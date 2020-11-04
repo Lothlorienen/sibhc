@@ -2,6 +2,7 @@
 
 global.$ = {
   gulp: require('gulp'),
+  nop: require('gulp-nop'),
   gulpPlugin: require('gulp-load-plugins')(),
   sass: require('gulp-sass'),
   webp: require('gulp-webp'),
@@ -20,13 +21,13 @@ global.$ = {
 };
 $.sass.compiler = require('dart-sass');
 
-$.config = JSON.parse($.fs.readFileSync('./config/config.json'));
+$.config = JSON.parse( $.fs.readFileSync('./config/config.json'), );
 $.config.buildMode = $.argv._[0].match(/build|build-prod/) ? 'prod' : 'dev';
 $.config.outputPath = $.config.buildMode === 'prod' ? $.config.destPath : $.config.tmpPath;
 
-if ($.config.criticalCss) $.critical = require('critical').stream
+if ($.config.criticalCss) { $.critical = require('critical').stream; }
 
-$.tasks.forEach((taskPath) => require(taskPath)());
+$.tasks.forEach((taskPath) => { require(taskPath)(); });
 
 $.gulp.task('dev', done => {
   $.gulp.series('clean',
