@@ -10,4 +10,132 @@
     font-weight: bold;
     line-height: normal;
   }
+
+  > ul {
+    .cat-item {
+      border-top: 1px solid $color-gray-20;
+      cursor: pointer;
+
+      &.cat-parent {
+        position: relative;
+        z-index: z(default) + 1;
+
+        @include media(tabletSmall, up) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        &:focus,
+        &:focus-within,
+        &:hover {
+          .children-menu {
+            color: $color-primary;
+          }
+
+          > a {
+            color: $color-primary;
+
+            ~ .children {
+              @include media(tabletSmall, up) {
+                display: initial;
+              }
+            }
+          }
+
+          .children {
+            @include media(tabletSmall, up) {
+              @include shadow(md);
+            }
+
+            @include media(tabletSmall) {
+              max-height: 200px;
+            }
+          }
+        }
+
+        > a {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+        }
+      }
+    }
+
+    a {
+      display: block;
+      padding: 13px 12px 13px 23px;
+      font-size: 14px;
+      line-height: normal;
+
+      @include media(mobile, up) {
+        white-space: nowrap;
+      }
+
+      &:focus-within,
+      &:hover {
+        color: $color-primary;
+      }
+
+      .current-cat {
+        color: $color-primary;
+        padding-left: 21px;
+        border-left: 2px solid $color-primary;
+
+        .children-menu {
+          color: $color-primary;
+        }
+      }
+    }
+
+    .children {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      margin: 0;
+      background-color: $color-white;
+
+      @include media(tabletSmall, up) {
+        display: none;
+      }
+
+      @include media(tabletSmall) {
+        position: static;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        @include hide-scrollbar;
+        @include transition(all, 500ms);
+      }
+
+      > *:first-child {
+        border-top: unset;
+      }
+
+      > * + * {
+        border-top: 1px solid $color-gray-20;
+      }
+
+      a {
+        @include media(tabletSmall) {
+          padding-left: 46px;
+        }
+
+        @include media(mobile) {
+          padding-left: 36px;
+        }
+      }
+    }
+
+    .children-menu {
+      @include transition;
+    }
+
+    .children-menu {
+      position: absolute;
+      top: 22px;
+      right: 23px;
+      transform: translateY(-50%);
+    }
+  }
 }

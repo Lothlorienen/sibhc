@@ -8,7 +8,7 @@
     }
   }
 
-  &__list {
+  ul {
     @include media(tabletSmall, up) {
       display: flex;
     }
@@ -18,7 +18,7 @@
     }
   }
 
-  &__item {
+  li {
     flex-grow: 1;
 
     &:last-child {
@@ -30,7 +30,7 @@
     }
   }
 
-  &__link {
+  a {
     display: block;
     height: 64px;
     font-weight: 700;
@@ -62,7 +62,7 @@
       }
     }
 
-    &.active {
+    &[aria-current] {
       @include media(tabletSmall, up) {
         background-color: $color-primary;
         box-shadow: inset 0 0 0 5px $color-primary, inset 0 0 0 6px $color-primary-hover;
