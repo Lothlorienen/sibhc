@@ -34,7 +34,9 @@ class SliderThumbs extends Widget {
       const img = document.createElement('img');
 
       wrapper.classList.add('swiper-slide');
-      img.src = item.dataset.original;
+      item.dataset.original
+        ? img.src = item.dataset.original
+        : img.src = item.src;
       img.alt = item.alt;
       wrapper.insertAdjacentElement('beforeend', img);
 

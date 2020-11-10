@@ -1,5 +1,8 @@
 .speaker-item {
+  height: 100%;
+
   &__container {
+    height: 100%;
     padding: 10px;
     background-color: $color-white;
   }
