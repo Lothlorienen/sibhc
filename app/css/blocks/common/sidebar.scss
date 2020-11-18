@@ -9,11 +9,12 @@
       &:focus,
       &:focus-within,
       &:hover {
-        .icon-arrowRight {
-          &::after,
-          &::before {
-            background-color: $color-primary;
-          }
+        &::after {
+          opacity: 1;
+        }
+
+        &::before {
+          opacity: 0;
         }
 
         > .sidebar-list__link {
@@ -35,6 +36,26 @@
             max-height: 200px;
           }
         }
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        transform: translateY(-50%) scale(0.8);
+        @include transition;
+      }
+
+      &::before {
+        @include sprite('right');
+      }
+
+      &::after {
+        @include sprite('right-primary');
+        opacity: 0;
       }
 
       > .sidebar-list__link {
@@ -109,13 +130,6 @@
       @include media(mobile) {
         padding-left: 36px;
       }
-    }
-  }
-
-  .icon-arrowRight {
-    &::after,
-    &::before {
-      @include transition;
     }
   }
 }

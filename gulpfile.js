@@ -40,11 +40,11 @@ $.gulp.task('dev', done => {
 
 $.gulp.task('build', done => {
   $.gulp.series('clean',
-    $.gulp.parallel('styles', 'scripts' ),
-    $.gulp.parallel('hbs', 'assets'),
-    $.gulp.parallel('imageMin', 'criticalCss'),
-    $.gulp.parallel('prepareHtmlBuild'),
-    $.gulp.parallel('meta'),
+    $.gulp.parallel('styles', ),
+    $.gulp.parallel('hbs', 'pngSprite', 'svgSprite', 'svgInline', 'assets'),
+    // $.gulp.parallel('imageMin', 'criticalCss'),
+    // $.gulp.parallel('prepareHtmlBuild'),
+    // $.gulp.parallel('meta'),
   )(done);
 });
 
