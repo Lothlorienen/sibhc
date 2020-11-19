@@ -40,7 +40,7 @@ $.gulp.task('dev', done => {
 
 $.gulp.task('build', done => {
   $.gulp.series('clean',
-    $.gulp.parallel('styles', ),
+    $.gulp.parallel('styles', 'scripts'),
     $.gulp.parallel('hbs', 'pngSprite', 'svgSprite', 'svgInline', 'assets'),
     $.gulp.parallel('imageMin', 'criticalCss'),
     $.gulp.parallel('prepareHtmlBuild'),
