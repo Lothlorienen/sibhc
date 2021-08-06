@@ -52,4 +52,68 @@
       margin-right: 5px;
     }
   }
+
+  blockquote {
+    margin: 24px 0;
+    padding-left: 40px;
+    border-left: 3px solid $color-primary;
+
+    @include media(mobile) {
+      margin: 30px 0;
+      padding-left: 15px;
+    }
+
+    p {
+      @include text-h4;
+    }
+
+    footer {
+      display: block;
+      margin-top: 12px;
+      @include text-body-2;
+    }
+
+    b {
+      @include text-h6;
+    }
+  }
+}
+
+.content-note {
+  padding: 7px 0 7px 42px;
+  position: relative;
+  margin: 12px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 8px;
+    bottom: 11px;
+    width: 3px;
+    background: $color-primary;
+    border-radius: 10px;
+  }
+
+  > *:first-child {
+    margin-top: 0;
+  }
+
+  @include media(mobile) {
+    padding-left: 15px;
+  }
+
+  b {
+    color: $color-primary;
+    @include text-h6;
+    display: block;
+
+    + * {
+      margin: 8px 0 0 0;
+    }
+  }
+
+  > * + * {
+    margin: 12px 0 0 0;
+  }
 }
