@@ -1,4 +1,18 @@
 .privacy-static {
+  > * {
+    &:first-child {
+      margin-top: 0 !important;
+    }
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    + * {
+      margin: 20px 0;
+    }
+  }
+
   h2 {
     display: block;
     margin: 36px 0 0;
@@ -52,31 +66,6 @@
       margin-right: 5px;
     }
   }
-
-  blockquote {
-    margin: 24px 0;
-    padding-left: 40px;
-    border-left: 3px solid $color-primary;
-
-    @include media(mobile) {
-      margin: 30px 0;
-      padding-left: 15px;
-    }
-
-    p {
-      @include text-h4;
-    }
-
-    footer {
-      display: block;
-      margin-top: 12px;
-      @include text-body-2;
-    }
-
-    b {
-      @include text-h6;
-    }
-  }
 }
 
 .content-note {
@@ -95,8 +84,14 @@
     border-radius: 10px;
   }
 
-  > *:first-child {
-    margin-top: 0;
+  > * {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @include media(mobile) {
