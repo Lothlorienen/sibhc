@@ -98,7 +98,8 @@
       line-height: normal;
 
       @include media(mobile, up) {
-        white-space: nowrap;
+        //white-space: nowrap;
+        min-width: 235px;
       }
 
       &:focus-within,
