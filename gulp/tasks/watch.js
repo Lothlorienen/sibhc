@@ -7,6 +7,7 @@ module.exports = () => {
     );
     $.gulp.watch([
         `${$.config.sourcePath}/${$.config.scriptsPath}/**/*.js`,
+        `./gulp/tasks/scripts.js`,
       ],
       $.gulp.series('scripts'),
     );

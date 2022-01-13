@@ -1,4 +1,10 @@
 .static {
+  max-width: calc(100vw - #{12px * 2});
+
+  @include media(mobile) {
+    max-width: calc(100vw - #{15px * 2});
+  }
+
   > * {
     &:first-child {
       margin-top: 0 !important;

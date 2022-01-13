@@ -24,7 +24,7 @@
     }
   }
 
-  &__nav {
+  &__nav[role="button"] {
     --swiper-navigation-size: 20px;
     --swiper-navigation-color: #{$color-white};
 
