@@ -4,7 +4,7 @@
     "dev": "gulp dev",
     "build": "gulp build",
     "prod": "gulp build-prod",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gulp build && gh-pages -d dist"
   },
   "author": "SkazMasters",
   "devDependencies": {
