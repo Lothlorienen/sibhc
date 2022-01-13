@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="preload" href="/assets/fonts/GothamPro/400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/GothamPro/500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/GothamPro/700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/GothamPro/900.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Мастер классы / Событие</title>
+
+  
+  
+  
+  <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#1B74FD">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1B74FD">
+<!-- Яндекс.Браузер -->
+<meta content="ya-title=#1B74FD,ya-dock=fade">
+<!-- Windows Phone -->
+<meta name="msapplication-config" content="../assets/images/favicon/browserconfig.xml">
+<meta name="msapplication-navbutton-color" content="#1B74FD">
+<meta name="msapplication-TileColor" content="#1B74FD">
+<link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#1B74FD">
+
+
+
+<!--  { {>core/favicon}}-->
+
+  <link rel="stylesheet" href="../css/main.css?v=3692">
+</head>
+
+<body class="page">
+<div class="preloader js-preloader"></div>
+<div class="page__inner">
+
+<header class="header page__header">
+  <!--Top-->
+  <div class="header__top">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-top__container">
+          <!--Brand-->
+          <div class="header-top__logo">
+            <div class="page-logo">
+                <a class="page-logo__container" href="#">
+                  <img src="../assets/images/common/logo.png" alt="Логотип">
+                </a>
+            </div>    </div>
+          <!--Contacts-->
+          <div class="header-top__contacts">
+            <ul class="header-top__contacts-list">
+              <li class="header-top__contacts-item header-top__contacts-item--email">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Наш email:</span>
+                  <p><a class="contacts-item__link" href="mailto:sibbc@yandex.ru">sibbc@yandex.ru</a></p>
+                  
+                </div>        </li>
+              <li class="header-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Отдел сбыта:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912205866">+7 (391) 220 58 66</a></p>
+                  
+                </div>        </li>
+              <li class="header-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Приемная:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912211526">+7 (391) 221 15 26</a></p>
+                  
+                </div>        </li>
+            </ul>
+          </div>
+          <!--Actions-->
+          <div class="header-top__actions">
+            <button class="header-top__actions-btn js-popup-open" data-popup="call"><span>Заказать звонок</span></button>
+            <!--Popup-->
+            <div class="popup js-popup" data-popup-id="call">
+              <div class="popup__wrapper">
+                <div class="popup__inner">
+                  <button class="popup__close js-popup-close"></button>
+            
+                  <div class="popup__window">
+                    <div class="popup__content">
+                        <div class="popup-call">
+                          <div class="popup-call__success" style="display: none">
+                            <span class="popup-call__title">Звонок заказа</span>
+                            <p class="popup-call__text">Обычно мы перезваниваем в течени 10 минут</p>
+                            <div class="popup-call__submit">
+                              <button class="btn btn--large btn--primary js-popup-close">Закрыть</button>
+                            </div>
+                          </div>
+                          <div class="popup-call__failure" style="display: none">
+                            <span class="popup-call__title">Ошибка отправки</span>
+                            <p class="popup-call__text">К сожалению ваша заявка не была отправлена.<br>
+                              Но вы можете попробовать отправить еще раз,
+                              данные сохранились в форме.</p>
+                            <div class="popup-call__submit">
+                              <button class="btn btn--large btn--primary">Вернуться к заявке</button>
+                            </div>
+                          </div>
+                          <div class="popup-call__normal" style="display: block">
+                            <div class="popup-call__form">
+                              <span class="popup-call__title">Заказать звонок</span>
+                              <div class="popup-call__input">
+                                <div class="form-field">
+                                  <input type="text" class="form-field__input " placeholder="Фамилия и имя*">
+                                  
+                                </div>        </div>
+                              <div class="popup-call__input">
+                                <div class="form-field">
+                                  <input type="text" class="form-field__input " placeholder="Номер телефона*">
+                                  
+                                </div>        </div>
+                              <div class="popup-call__input">
+                                <div class="form-checkbox">
+                                  <label class="form-checkbox__label">
+                                    <input type="checkbox" class="form-checkbox__input">
+                                    <span class="form-checkbox__icon"><i class="form-checkbox__icon-container"></i></span>
+                                    <span class="form-checkbox__label-text">Я согласен с условиями обработки персональных данных</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="popup-call__submit">
+                              <button class="popup-call__submit-btn">Заказать</button>
+                            </div>
+                            <div class="popup-call__terms">
+                              <a class="popup-call__terms-link" href="#">Ознакомиться с условиями</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    </div>
+  </div>
+  <!--Main-->
+  <div class="header__main js-header-menu">
+    <div class="container">
+      <div class="header-main">
+        <div class="header-main__container">
+          <div class="header-main__close">
+            <button class="header-main__close-btn js-header-menu__close" type="button" aria-label="Открыть меню.">
+              <span class="header-main__close-icon"></span>
+            </button>
+          </div>
+          <nav class="header-main__menu" role="navigation">
+            <ul class="header-main__list">
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">главная</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">о компании</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">каталог товаров</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link active" href="#">мастер-классы</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">блог</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>    </div>
+  </div>
+</header>
+
+<main class="page__content">
+<section class="internal-template">
+  <div class="container">
+    <div class="internal-template__container">
+      <div class="internal-template__breadcrumbs">
+        <div class="page-breadcrumbs">
+          <span class="page-breadcrumbs__item"><a class="page-breadcrumbs__link" href="#">СибХЦ</a></span>
+          <span class="page-breadcrumbs__item page-breadcrumbs__item--current">Мастер класс / Событие</span>
+        </div>
+      </div>
+      <div class="internal-template__header">
+        <h1 class="internal-template__title">Мастер класс / Событие</h1>
+      </div>
+      <div class="internal-template__content">
+        <article class="event-content">
+          <div class="event-content__container">
+            <div class="event-content__left">
+              <div class="static">
+                  <picture>
+                
+                
+                    <source data-srcset="../assets/images/event/preview.jpg" type="image/jpeg">
+                    <img class="lazy" data-sizes="auto" data-original="../assets/images/event/preview.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                  </picture>
+        
+                <p>29 января 2020 года в нашем демонстрационном центре прошел бесплатный мастер-класс от компании ЗАО «УНИГРА»
+                  (Master Martini).</p>
+                <p>Наши специалисты представили программу для предстоящих праздников, а также новинки и оригинальные решения в
+                  оформлении тортов, конфет, попс-кейков, куличей и кексов. Мастер-класс и презентацию продукции проводит
+                  демонстратор — консультант Лилия Кутуева совместно с нашими технологами Нелли Миллер и Татьяной Орловой.</p>
+        
+                <h2>Программа мастер-класса</h2>
+        
+                <p><b>Торты:</b></p>
+                <ul>
+                  <li>Торт «Андалусия»;</li>
+                  <li>Торт «Экзотик»;</li>
+                  <li>Торт «Сметанно-клубничный».</li>
+                </ul>
+        
+                <p><b>Печенье и пирожные:</b></p>
+                <ul>
+                  <li>Печенье «Мокко-трюфель»;</li>
+                  <li>Печенье «Бискотти»;</li>
+                  <li>Пирожное «Пасха».</li>
+                </ul>
+        
+                <p><b>Куличи и кексы:</b></p>
+                <ul>
+                  <li>Кулич «Пасхальный»;</li>
+                  <li>Кулич «Крафин»;</li>
+                  <li>Пасхально-шоколадный кекс.</li>
+                </ul>
+        
+                <p><b>Конфеты и попс-кейки:</b></p>
+                <ul>
+                  <li>Конфета с томатами;</li>
+                  <li>Попс-кейки клубничные.</li>
+                </ul>
+        
+                <h2>Ингредиенты использованные на мероприятии</h2>
+                <ul class="columns columns--2">
+                  <li>Шоколад Ариба 60%, 70%</li>
+                  <li>Апельсиновая паста «Varegato Arancio»</li>
+                  <li>Смесь крахмальная «Микельанджелло»</li>
+                  <li>Темный шоколад «Ариба» 54%</li>
+                  <li>Молочный шоколад «<a href="http://xn--90an0asf.xn--p1ai/product/shokolad-v-plitkah-molochnyj-ariba-latte-pani-32-2-5-kg/" target="_blank" rel="noopener">Ариба</a>»</li>
+                  <li>Сливки «Мастер Гурме»</li>
+                  <li><a href="http://xn--90an0asf.xn--p1ai/product/shokolad-belyj-v-plitkah-ariba-bianco-pani-2-5-kg/" target="_blank" rel="noopener">Шоколад Ариба белый</a></li>
+                  <li><a href="http://xn--90an0asf.xn--p1ai/product/glazur-chentramerika-klubnika/" target="_blank" rel="noopener">Глазурь «Чентрамерика Клубника»</a></li>
+                  <li>Маргарин «Максим Джоя»</li>
+                  <li>Шоколад Ариба Чанксы темные</li>
+                  <li>Улучшитель «<a href="http://xn--90an0asf.xn--p1ai/product/kompleksnaya-pishhevaya-dobavka-master-pan-freez-master-pan-friz/" target="_blank" rel="noopener">Мастер Пан Фриз</a>»</li>
+                  <li>Покрытие «<a href="http://xn--90an0asf.xn--p1ai/product/polufabrikat-konditerskij-krem-bolero-kokoa/" target="_blank" rel="noopener">Болеро Какао</a>»</li>
+                  <li>Глазурь «<a href="http://xn--90an0asf.xn--p1ai/product/glazur-konditerskaya-karibe-byanko-diski/" target="_blank" rel="noopener">Карибе Бьянко</a>» (для декора)</li>
+                  <li>Смесь «<a href="http://xn--90an0asf.xn--p1ai/product/polufabrikat-muchnyh-konditerskih-izdelij-fiorfiore-muffin-c20-fiorfiore-maffin-ts20/" target="_blank" rel="noopener">Маффин С20</a>»</li>
+                  <li>«<a href="http://xn--90an0asf.xn--p1ai/product/polufabrikat-konditerskij-krem-karavella-krem-kakao/" target="_blank" rel="noopener">Каравелла Крем Какао</a>»</li>
+                  <li>«<a href="http://xn--90an0asf.xn--p1ai/product/kakao-poroshok-alkalizovannyj-ariba-kakao-amaro/" target="_blank" rel="noopener">Ариба Какао Амаро</a>»</li>
+                  <li>Шоколадные «Чанксы Вайт»</li>
+                  <li>«<a href="http://xn--90an0asf.xn--p1ai/product/polufabrikat-muchnyh-konditerskih-izdelij-fiorfiore-pan-di-spagna-c25-fiorfiore-pan-di-spanya-ts25/" target="_blank" rel="noopener">Пан ди Спанья С25</a>» смесь</li>
+                  <li>Шоколадные капли «Ариба» / «Бай»</li>
+                  <li>Глазурь «<a href="http://xn--90an0asf.xn--p1ai/product/glazur-konditerskaya-chentramerika-master-martini/" target="_blank" rel="noopener">Чентрамерика</a>»</li>
+                  <li>«<a href="http://xn--90an0asf.xn--p1ai/product/polufabrikat-konditerskij-krem-karavella-kover-kokoa/" target="_blank" rel="noopener">Ковер Кокоа</a>» (покрытие)</li>
+                  <li><a href="http://xn--90an0asf.xn--p1ai/product/glazur-konditerskaya-karibe-byanko-skalette/" target="_blank" rel="noopener">Карибе Бьянко Скальетте</a> (на обсыпку)</li>
+                  <li>Смесь миндальная «<a href="http://xn--90an0asf.xn--p1ai/product/konditerskij-otdelochnyj-polufabrikat-fiorfiore-la-glassa-fiorfiore-la-glassa/" target="_blank" rel="noopener">Ла Гласса</a>»</li>
+                  <li>Покрытие белое «<a href="http://xn--90an0asf.xn--p1ai/product/polufabrikat-konditerskij-krem-karavella-kover-uajt/" target="_blank" rel="noopener">Каравелла Ковер Вайт</a>»</li>
+                  <li>Зеркальное покрытие «<a href="http://xn--90an0asf.xn--p1ai/product/zerkalnyj-gel-mirall-nejtralnyj/" target="_blank" rel="noopener">Миралль Нейтральный</a>»</li>
+                  <li>Декор из глазури «<a href="http://xn--90an0asf.xn--p1ai/product/glazur-konditerskaya-karibe-byanko-diski/" target="_blank" rel="noopener">Карибе диски белые</a>»</li>
+                  <li>Белый шоколад «<a href="http://xn--90an0asf.xn--p1ai/product/shokolad-belyj-v-plitkah-ariba-bianco-pani-2-5-kg/" target="_blank" rel="noopener">Ариба</a>»</li>
+                  <li>Десертная паста «<a href="http://xn--90an0asf.xn--p1ai/product/fruktovyj-polufabrikat-dlya-konditerskih-izdelij-linea-gelato-pasta-fragola-klubnika/" target="_blank" rel="noopener">Клубника</a>»</li>
+                  <li>«<a href="http://xn--90an0asf.xn--p1ai/product/zerkalnyj-gel-mirall-belyj-shokolad/" target="_blank" rel="noopener">Миралль Белый Шоколад</a>»</li>
+                  <li>«<a href="http://xn--90an0asf.xn--p1ai/product/glazur-konditerskaya-karibe-byanko-diski/" target="_blank" rel="noopener">Миралль Бьянко</a>»</li>
+                  <li>Декор из глазури «<a href="http://xn--90an0asf.xn--p1ai/product/glazur-konditerskaya-karibe-fondente-diski/" target="_blank" rel="noopener">Карибе диски тёмные</a>»</li>
+                </ul>
+        
+                <div class="event-album">
+                  <h2>Фотоотчёт</h2>
+                  <div class="slider-thumbs js-slider-thumbs">
+                      <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/event/preview.jpg" type="image/jpeg">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/event/preview.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                      <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/home/about/about.jpg" type="image/jpeg">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/home/about/about.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                      <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/home/slider/01.jpg" type="image/jpeg">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/home/slider/01.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                      <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/home/slider/02.png" type="image/png">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/home/slider/02.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                      <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/home/slider/03.jpg" type="image/jpeg">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/home/slider/03.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                      <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/event/preview.jpg" type="image/jpeg">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/event/preview.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                      <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/event/preview.jpg" type="image/jpeg">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/event/preview.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="event-content__right">
+              <section class="event-speakers">
+                <h2 class="event-content__title">Спикеры мастер-класса:</h2>
+                <ul class="event-speakers__list">
+                  <li>
+                    <div class="speaker-item">
+                      <div class="speaker-item__container">
+                        <div class="speaker-item__image">  <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/speakers/01.jpg" type="image/jpeg">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/speakers/01.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                    </div>
+                        <span class="speaker-item__title">Кутуева Лилия</span>
+                      </div>
+                    </div>          </li>
+                  <li>
+                    <div class="speaker-item">
+                      <div class="speaker-item__container">
+                        <div class="speaker-item__image">  <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/speakers/02.jpg" type="image/jpeg">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/speakers/02.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                    </div>
+                        <span class="speaker-item__title">Орлова Татьяна</span>
+                      </div>
+                    </div>          </li>
+                  <li>
+                    <div class="speaker-item">
+                      <div class="speaker-item__container">
+                        <div class="speaker-item__image">  <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/speakers/03.jpg" type="image/jpeg">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/speakers/03.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                    </div>
+                        <span class="speaker-item__title">Миллер Нелли</span>
+                      </div>
+                    </div>          </li>
+                </ul>
+              </section>
+              <section class="event-ingredients">
+                <h2 class="event-content__title">Ингредиенты:</h2>
+                <ul class="event-speakers__list">
+                  <li>
+                    <div class="ingredient-item">
+                      <a href="#" class="ingredient-item__link"></a>
+                      <div class="ingredient-item__content">
+                        <div class="ingredient-item__image">  <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                    </div>
+                        <span class="ingredient-item__label">Пример ингридиента</span>
+                      </div>
+                    </div>          </li>
+                  <li>
+                    <div class="ingredient-item">
+                      <a href="#" class="ingredient-item__link"></a>
+                      <div class="ingredient-item__content">
+                        <div class="ingredient-item__image">  <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                    </div>
+                        <span class="ingredient-item__label">Пример ингридиента с длинным описанием</span>
+                      </div>
+                    </div>          </li>
+                  <li>
+                    <div class="ingredient-item">
+                      <a href="#" class="ingredient-item__link"></a>
+                      <div class="ingredient-item__content">
+                        <div class="ingredient-item__image">  <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                    </div>
+                        <span class="ingredient-item__label">Пример ингридиента</span>
+                      </div>
+                    </div>          </li>
+                  <li>
+                    <div class="ingredient-item">
+                      <a href="#" class="ingredient-item__link"></a>
+                      <div class="ingredient-item__content">
+                        <div class="ingredient-item__image">  <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                    </div>
+                        <span class="ingredient-item__label">Пример ингридиента с неимоверно длинным описанием заголовка</span>
+                      </div>
+                    </div>          </li>
+                  <li>
+                    <div class="ingredient-item">
+                      <a href="#" class="ingredient-item__link"></a>
+                      <div class="ingredient-item__content">
+                        <div class="ingredient-item__image">  <picture>
+                    
+                    
+                        <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                        <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                      </picture>
+                    </div>
+                        <span class="ingredient-item__label">Пример ингридиента</span>
+                      </div>
+                    </div>          </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </article>
+        <section class="event-related">
+          <h2 class="event-related__title">История мастер-классов</h2>
+          <ul class="event-related__list">
+            <li>
+              <article class="related-event">
+                <a href="#" class="related-event__link" aria-label="Перейти на страницу события."></a>
+                <div class="related-event__content">
+                  <p class="related-event__date">
+                    <time datetime="20-02-2020">25 сентября 2020 года</time>
+                  </p>
+                  <h3 class="related-event__title">Семинар-дегустация «Закваски и заварки для хлеба и хлебобулочных изделий»</h3>
+                </div>
+              </article>    </li>
+            <li>
+              <article class="related-event">
+                <a href="#" class="related-event__link" aria-label="Перейти на страницу события."></a>
+                <div class="related-event__content">
+                  <p class="related-event__date">
+                    <time datetime="20-02-2020">12 марта 2020 года</time>
+                  </p>
+                  <h3 class="related-event__title">Мастер-класс Ивана Забавникова</h3>
+                </div>
+              </article>    </li>
+            <li>
+              <article class="related-event">
+                <a href="#" class="related-event__link" aria-label="Перейти на страницу события."></a>
+                <div class="related-event__content">
+                  <p class="related-event__date">
+                    <time datetime="20-02-2020">29 января 2020 года</time>
+                  </p>
+                  <h3 class="related-event__title">Бесплатный мастер-класс от компании ЗАО «УНИГРА»</h3>
+                </div>
+              </article>    </li>
+            <li>
+              <article class="related-event">
+                <a href="#" class="related-event__link" aria-label="Перейти на страницу события."></a>
+                <div class="related-event__content">
+                  <p class="related-event__date">
+                    <time datetime="20-02-2020">18 декабря 2019 года</time>
+                  </p>
+                  <h3 class="related-event__title">Итоговый семинар-дегустация «Хлебопекарные и кондитерские тренды 2019 года»</h3>
+                </div>
+              </article>    </li>
+          </ul>
+          <div class="event-related__action">
+            <a href="#" class="btn btn--primary">Смотреть все мероприятия</a>
+          </div>
+        </section>      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="page__footer footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__container">
+          <div class="footer-top__logo">
+            <div class="page-logo">
+                <a class="page-logo__container" href="#">
+                  <img src="../assets/images/common/logo.png" alt="Логотип">
+                </a>
+            </div>    </div>
+          <div class="footer-top__nav">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Каталог товаров</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-top__contacts">
+            <ul class="footer-top__contacts-list">
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Наш адрес:</span>
+                  <p><span class="contacts-item__text">Россия, г. Красноярск, ул. Маерчака, 55</span></p>
+                  
+                  
+                </div>        </li>
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Отдел сбыта:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912205866">+7 (391) 220 58 66</a></p>
+                  <p><a class="contacts-item__link" href="tel:+73912215773">+7 (391) 221 57 73</a></p>
+                </div>        </li>
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Наш email:</span>
+                  <p><a class="contacts-item__link" href="mailto:sibbc@yandex.ru">sibbc@yandex.ru</a></p>
+                  
+                </div>        </li>
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Приемная:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912211526">+7 (391) 221 15 26</a></p>
+                  
+                </div>        </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="footer-bottom__item">
+          <p>&copy; «Сибирский хлебопекарный центр», 2020.</p>
+        </div>
+        <div class="footer-bottom__item">
+          <p>Разработка сайта — <a href="#" target="_blank" rel="nofollow">SkazMasters</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script src="../js/vendors.js?v=3692" defer></script>
+  <script src="../js/main.js?v=3692" defer></script>
+</body>
+</html>

@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="preload" href="/assets/fonts/GothamPro/400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/GothamPro/500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/GothamPro/700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/GothamPro/900.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Каталог товаров / Производитель</title>
+
+  
+  
+  
+  <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#1B74FD">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1B74FD">
+<!-- Яндекс.Браузер -->
+<meta content="ya-title=#1B74FD,ya-dock=fade">
+<!-- Windows Phone -->
+<meta name="msapplication-config" content="../assets/images/favicon/browserconfig.xml">
+<meta name="msapplication-navbutton-color" content="#1B74FD">
+<meta name="msapplication-TileColor" content="#1B74FD">
+<link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#1B74FD">
+
+
+
+<!--  { {>core/favicon}}-->
+
+  <link rel="stylesheet" href="../css/main.css?v=3692">
+</head>
+
+<body class="page">
+<div class="preloader js-preloader"></div>
+<div class="page__inner">
+
+<header class="header page__header">
+  <!--Top-->
+  <div class="header__top">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-top__container">
+          <!--Brand-->
+          <div class="header-top__logo">
+            <div class="page-logo">
+                <a class="page-logo__container" href="#">
+                  <img src="../assets/images/common/logo.png" alt="Логотип">
+                </a>
+            </div>    </div>
+          <!--Contacts-->
+          <div class="header-top__contacts">
+            <ul class="header-top__contacts-list">
+              <li class="header-top__contacts-item header-top__contacts-item--email">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Наш email:</span>
+                  <p><a class="contacts-item__link" href="mailto:sibbc@yandex.ru">sibbc@yandex.ru</a></p>
+                  
+                </div>        </li>
+              <li class="header-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Отдел сбыта:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912205866">+7 (391) 220 58 66</a></p>
+                  
+                </div>        </li>
+              <li class="header-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Приемная:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912211526">+7 (391) 221 15 26</a></p>
+                  
+                </div>        </li>
+            </ul>
+          </div>
+          <!--Actions-->
+          <div class="header-top__actions">
+            <button class="header-top__actions-btn js-popup-open" data-popup="call"><span>Заказать звонок</span></button>
+            <!--Popup-->
+            <div class="popup js-popup" data-popup-id="call">
+              <div class="popup__wrapper">
+                <div class="popup__inner">
+                  <button class="popup__close js-popup-close"></button>
+            
+                  <div class="popup__window">
+                    <div class="popup__content">
+                        <div class="popup-call">
+                          <div class="popup-call__success" style="display: none">
+                            <span class="popup-call__title">Звонок заказа</span>
+                            <p class="popup-call__text">Обычно мы перезваниваем в течени 10 минут</p>
+                            <div class="popup-call__submit">
+                              <button class="btn btn--large btn--primary js-popup-close">Закрыть</button>
+                            </div>
+                          </div>
+                          <div class="popup-call__failure" style="display: none">
+                            <span class="popup-call__title">Ошибка отправки</span>
+                            <p class="popup-call__text">К сожалению ваша заявка не была отправлена.<br>
+                              Но вы можете попробовать отправить еще раз,
+                              данные сохранились в форме.</p>
+                            <div class="popup-call__submit">
+                              <button class="btn btn--large btn--primary">Вернуться к заявке</button>
+                            </div>
+                          </div>
+                          <div class="popup-call__normal" style="display: block">
+                            <div class="popup-call__form">
+                              <span class="popup-call__title">Заказать звонок</span>
+                              <div class="popup-call__input">
+                                <div class="form-field">
+                                  <input type="text" class="form-field__input " placeholder="Фамилия и имя*">
+                                  
+                                </div>        </div>
+                              <div class="popup-call__input">
+                                <div class="form-field">
+                                  <input type="text" class="form-field__input " placeholder="Номер телефона*">
+                                  
+                                </div>        </div>
+                              <div class="popup-call__input">
+                                <div class="form-checkbox">
+                                  <label class="form-checkbox__label">
+                                    <input type="checkbox" class="form-checkbox__input">
+                                    <span class="form-checkbox__icon"><i class="form-checkbox__icon-container"></i></span>
+                                    <span class="form-checkbox__label-text">Я согласен с условиями обработки персональных данных</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="popup-call__submit">
+                              <button class="popup-call__submit-btn">Заказать</button>
+                            </div>
+                            <div class="popup-call__terms">
+                              <a class="popup-call__terms-link" href="#">Ознакомиться с условиями</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    </div>
+  </div>
+  <!--Main-->
+  <div class="header__main js-header-menu">
+    <div class="container">
+      <div class="header-main">
+        <div class="header-main__container">
+          <div class="header-main__close">
+            <button class="header-main__close-btn js-header-menu__close" type="button" aria-label="Открыть меню.">
+              <span class="header-main__close-icon"></span>
+            </button>
+          </div>
+          <nav class="header-main__menu" role="navigation">
+            <ul class="header-main__list">
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">главная</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">о компании</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link active" href="#">каталог товаров</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">мастер-классы</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">блог</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>    </div>
+  </div>
+</header>
+
+<div class="page__content">
+<div class="internal-template internal-template--sidebar-enabled">
+  <aside class="internal-template__sidebar">
+    <div class="sidebar-widget">
+        <div class="sidebar-widget__header">
+          <span class="sidebar-widget__title">Каталог товаров</span>
+        </div>
+      <div class="sidebar-widget__container">
+          <ul class="sidebar-list">
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link sidebar-list__link--active" href="#">Категория товара</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+            <li class="sidebar-list__item sidebar-list__item--parent">
+              <a class="sidebar-list__link" href="#" aria-haspopup="true">Категория товара</a>
+              <ul class="sidebar-list__submenu" aria-label="Подменю">
+                <li class="sidebar-list__item">
+                  <a href="#" class="sidebar-list__link">Категория товара</a>
+                </li>
+                <li class="sidebar-list__item">
+                  <a href="#" class="sidebar-list__link">Еще одна категория товара</a>
+                </li>
+                <li class="sidebar-list__item">
+                  <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-list__item sidebar-list__item--parent">
+              <a class="sidebar-list__link" href="#" aria-haspopup="true">Категория товара</a>
+              <ul class="sidebar-list__submenu" aria-label="Подменю">
+                <li class="sidebar-list__item">
+                  <a href="#" class="sidebar-list__link">Категория товара</a>
+                </li>
+                <li class="sidebar-list__item">
+                  <a href="#" class="sidebar-list__link">Еще одна категория товара</a>
+                </li>
+                <li class="sidebar-list__item">
+                  <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+            <li class="sidebar-list__item sidebar-list__item--parent">
+              <a class="sidebar-list__link" href="#" aria-haspopup="true">Категория товара</a>
+              <ul class="sidebar-list__submenu" aria-label="Подменю">
+                <li class="sidebar-list__item">
+                  <a href="#" class="sidebar-list__link">Категория товара</a>
+                </li>
+                <li class="sidebar-list__item">
+                  <a href="#" class="sidebar-list__link">Еще одна категория товара</a>
+                </li>
+                <li class="sidebar-list__item">
+                  <a href="#" class="sidebar-list__link">Третий пункт подменю</a>
+                </li>
+              </ul>
+            </li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Категория товара</a></li>
+          </ul>
+      </div>
+    </div><div class="sidebar-widget">
+        <div class="sidebar-widget__header">
+          <span class="sidebar-widget__title">Производители</span>
+        </div>
+      <div class="sidebar-widget__container">
+          <ul class="sidebar-list">
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
+            <li class="sidebar-list__item"><a class="sidebar-list__link" href="#">Производитель</a></li>
+          </ul>
+      </div>
+    </div><div class="sidebar-widget">
+      <div class="sidebar-widget__container">
+          <div class="sidebar-banner">
+            <div class="sidebar-banner__container">
+              <a class="sidebar-banner__link" href="#"></a>
+              <div class="sidebar-banner__bg">  <picture>
+          
+          
+              <source data-srcset="../assets/images/sidebar/banner/bg.png" type="image/png">
+              <img class="lazy" data-sizes="auto" data-original="../assets/images/sidebar/banner/bg.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+            </picture>
+          </div>
+              <h2 class="sidebar-banner__title">Открытые мастер-классы СибХЦ</h2>
+              <p class="sidebar-banner__text">На XVII Сибирском форуме хлебопечения пройдут открытые мастер-классы СибХЦ</p>
+              <div class="sidebar-banner__action"><a class="sidebar-banner__btn" href="#">Подробнее</a></div>
+            </div>
+          </div>  </div>
+    </div>  </aside>
+  <main class="internal-template__container">
+    <div class="internal-template__breadcrumbs">
+      <div class="page-breadcrumbs">
+        <span class="page-breadcrumbs__item"><a class="page-breadcrumbs__link" href="#">СибХЦ</a></span>
+        <span class="page-breadcrumbs__item page-breadcrumbs__item--current">Производитель</span>
+      </div>
+    </div>
+    <div class="internal-template__header">
+      <h1 class="internal-template__title internal-template__title--big">Производитель</h1>
+    </div>
+    <div class="internal-template__content">
+      <section class="category-product">
+        <div class="category-product__container">
+          <div class="category-product__image">
+            <div class="category-product__image-wrapper">
+                <picture>
+              
+              
+                  <source data-srcset="../assets/images/brands/dukat.png" type="image/png">
+                  <img class="lazy" data-sizes="auto" data-original="../assets/images/brands/dukat.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                </picture>
+            </div>
+          </div>
+          <div class="category-product__description">
+            <p class="category-product__text">
+              Компания "Дукат" - занимается производством и продажей качественных ингредиентов и сырья для пищевой
+              промышленности - Мы стремимся к стабильности в успехе, смотрим далеко вперед и не упускаем возможности учиться и
+              развиваться. - Мы активно и с энтузиазмом работаем на благо нашей компании, наших клиентов и над созданием своих
+              продуктов. - Мы производим только качественную продукцию. Мы полностью осознаем и несем ответственность за
+              качество своей продукции. - Мы поставляем различные ингредиенты для удовлетворения любых потребностей наших
+              клиентов. - Мы ведем разработки продукции совместно с зарубежными специалистами пищевой отрасли - Наше
+              производство сертифицировано по международному стандарту ISO 22000-2007 (ISO 22000:2005) Наш девиз "Вместе к
+              успеху!" - отражает наше отношение к партнерам, поставщикам, дистрибьюторам, сотрудникам и к жизни в целом. Мы
+              стараемся делать все, чтобы Вы были успешными вместе с нами! *По тексту сайта и иных материалов, размещенных в
+              сети Интернет - наши предприятия ООО Компания "Дукат", ООО "Александрия", ООО "Новые технологии" и др., вместе
+              или по отдельности.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="shop-catalog">
+        <ul class="shop-catalog__list">
+          <li class="shop-catalog__item">
+            <article class="catalog-item">
+              <a href="#" class="catalog-item__link"></a>
+              <div class="catalog-item__content">
+                <div class="catalog-item__image">
+                    <picture>
+            
+            
+                <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+            
+                </div>
+                <h3 class="catalog-item__title">Товар</h3>
+                <p class="catalog-item__description"><span>Описание:</span> Дрожжи прессованные — это спрессованный в брикет продукт, который был получен посредством брожения особого вида грибов, используемый в качестве разрыхлителя для теста.</p>
+              </div>
+            </article>    </li>
+          <li class="shop-catalog__item">
+            <article class="catalog-item">
+              <a href="#" class="catalog-item__link"></a>
+              <div class="catalog-item__content">
+                <div class="catalog-item__image">
+                    <picture>
+            
+            
+                <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+            
+                </div>
+                <h3 class="catalog-item__title">Товар с названием в целых три строки, если такое вообще возможно</h3>
+                <p class="catalog-item__description"><span>Описание:</span> Дрожжи прессованные — это спрессованный в брикет продукт, который был получен посредством брожения особого вида грибов, используемый в качестве разрыхлителя для теста.</p>
+              </div>
+            </article>    </li>
+          <li class="shop-catalog__item">
+            <article class="catalog-item">
+              <a href="#" class="catalog-item__link"></a>
+              <div class="catalog-item__content">
+                <div class="catalog-item__image">
+                    <picture>
+            
+            
+                <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+            
+                </div>
+                <h3 class="catalog-item__title">Товар с очень длинным двухстрочным названием</h3>
+                <p class="catalog-item__description"><span>Описание:</span> Дрожжи прессованные — это спрессованный в брикет продукт, который был получен посредством брожения особого вида грибов, используемый в качестве разрыхлителя для теста.</p>
+              </div>
+            </article>    </li>
+          <li class="shop-catalog__item">
+            <article class="catalog-item">
+              <a href="#" class="catalog-item__link"></a>
+              <div class="catalog-item__content">
+                <div class="catalog-item__image">
+                    <picture>
+            
+            
+                <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+            
+                </div>
+                <h3 class="catalog-item__title">Товар</h3>
+                <p class="catalog-item__description"><span>Описание:</span> Дрожжи прессованные — это спрессованный в брикет продукт, который был получен посредством брожения особого вида грибов, используемый в качестве разрыхлителя для теста.</p>
+              </div>
+            </article>    </li>
+          <li class="shop-catalog__item">
+            <article class="catalog-item">
+              <a href="#" class="catalog-item__link"></a>
+              <div class="catalog-item__content">
+                <div class="catalog-item__image">
+                    <picture>
+            
+            
+                <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+            
+                </div>
+                <h3 class="catalog-item__title">Товар</h3>
+                <p class="catalog-item__description"><span>Описание:</span> Дрожжи прессованные — это спрессованный в брикет продукт, который был получен посредством брожения особого вида грибов, используемый в качестве разрыхлителя для теста.</p>
+              </div>
+            </article>    </li>
+          <li class="shop-catalog__item">
+            <article class="catalog-item">
+              <a href="#" class="catalog-item__link"></a>
+              <div class="catalog-item__content">
+                <div class="catalog-item__image">
+                    <picture>
+            
+            
+                <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+            
+                </div>
+                <h3 class="catalog-item__title">Товар</h3>
+                <p class="catalog-item__description"><span>Описание:</span> Дрожжи прессованные — это спрессованный в брикет продукт, который был получен посредством брожения особого вида грибов, используемый в качестве разрыхлителя для теста.</p>
+              </div>
+            </article>    </li>
+          <li class="shop-catalog__item">
+            <article class="catalog-item">
+              <a href="#" class="catalog-item__link"></a>
+              <div class="catalog-item__content">
+                <div class="catalog-item__image">
+                    <picture>
+            
+            
+                <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+            
+                </div>
+                <h3 class="catalog-item__title">Товар с названием в целых три строки, если такое вообще возможно</h3>
+                <p class="catalog-item__description"><span>Описание:</span> Дрожжи прессованные — это спрессованный в брикет продукт, который был получен посредством брожения особого вида грибов, используемый в качестве разрыхлителя для теста.</p>
+              </div>
+            </article>    </li>
+          <li class="shop-catalog__item">
+            <article class="catalog-item">
+              <a href="#" class="catalog-item__link"></a>
+              <div class="catalog-item__content">
+                <div class="catalog-item__image">
+                    <picture>
+            
+            
+                <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+            
+                </div>
+                <h3 class="catalog-item__title">Товар с очень длинным двухстрочным названием</h3>
+                <p class="catalog-item__description"><span>Описание:</span> Дрожжи прессованные — это спрессованный в брикет продукт, который был получен посредством брожения особого вида грибов, используемый в качестве разрыхлителя для теста.</p>
+              </div>
+            </article>    </li>
+          <li class="shop-catalog__item">
+            <article class="catalog-item">
+              <a href="#" class="catalog-item__link"></a>
+              <div class="catalog-item__content">
+                <div class="catalog-item__image">
+                    <picture>
+            
+            
+                <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+            
+                </div>
+                <h3 class="catalog-item__title">Товар</h3>
+                <p class="catalog-item__description"><span>Описание:</span> Дрожжи прессованные — это спрессованный в брикет продукт, который был получен посредством брожения особого вида грибов, используемый в качестве разрыхлителя для теста.</p>
+              </div>
+            </article>    </li>
+        </ul>
+        <div class="shop-catalog__nav">
+          <div class="pagination">
+            <ul class="pagination__list">
+              <li class="pagination__prev"><a href="#"><i class="icon-arrowLeft"></i></a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li class="pagination__next"><a href="#"><i class="icon-arrowRight"></i></a></li>
+            </ul>
+          </div>  </div>
+      </section>    </div>
+  </main>
+</div>
+</div>
+
+<footer class="page__footer footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__container">
+          <div class="footer-top__logo">
+            <div class="page-logo">
+                <a class="page-logo__container" href="#">
+                  <img src="../assets/images/common/logo.png" alt="Логотип">
+                </a>
+            </div>    </div>
+          <div class="footer-top__nav">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Каталог товаров</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-top__contacts">
+            <ul class="footer-top__contacts-list">
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Наш адрес:</span>
+                  <p><span class="contacts-item__text">Россия, г. Красноярск, ул. Маерчака, 55</span></p>
+                  
+                  
+                </div>        </li>
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Отдел сбыта:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912205866">+7 (391) 220 58 66</a></p>
+                  <p><a class="contacts-item__link" href="tel:+73912215773">+7 (391) 221 57 73</a></p>
+                </div>        </li>
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Наш email:</span>
+                  <p><a class="contacts-item__link" href="mailto:sibbc@yandex.ru">sibbc@yandex.ru</a></p>
+                  
+                </div>        </li>
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Приемная:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912211526">+7 (391) 221 15 26</a></p>
+                  
+                </div>        </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="footer-bottom__item">
+          <p>&copy; «Сибирский хлебопекарный центр», 2020.</p>
+        </div>
+        <div class="footer-bottom__item">
+          <p>Разработка сайта — <a href="#" target="_blank" rel="nofollow">SkazMasters</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script src="../js/vendors.js?v=3692" defer></script>
+  <script src="../js/main.js?v=3692" defer></script>
+</body>
+</html>

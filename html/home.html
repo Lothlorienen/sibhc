@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link rel="preload" href="/assets/fonts/GothamPro/400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/GothamPro/500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/GothamPro/700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/GothamPro/900.woff2" as="font" type="font/woff2" crossorigin>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Главная</title>
+
+  
+  
+  
+  <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#1B74FD">
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#1B74FD">
+<!-- Яндекс.Браузер -->
+<meta content="ya-title=#1B74FD,ya-dock=fade">
+<!-- Windows Phone -->
+<meta name="msapplication-config" content="../assets/images/favicon/browserconfig.xml">
+<meta name="msapplication-navbutton-color" content="#1B74FD">
+<meta name="msapplication-TileColor" content="#1B74FD">
+<link rel="mask-icon" href="../assets/images/favicon/safari-pinned-tab.svg" color="#1B74FD">
+
+
+
+<!--  { {>core/favicon}}-->
+
+  <link rel="stylesheet" href="../css/main.css?v=3692">
+</head>
+
+<body class="page">
+<div class="preloader js-preloader"></div>
+<div class="page__inner">
+
+<header class="header page__header">
+  <!--Top-->
+  <div class="header__top">
+    <div class="container">
+      <div class="header-top">
+        <div class="header-top__container">
+          <!--Brand-->
+          <div class="header-top__logo">
+            <div class="page-logo">
+                <span class="page-logo__container">
+                  <img src="../assets/images/common/logo.png" alt="Логотип">
+                </span>
+            </div>    </div>
+          <!--Contacts-->
+          <div class="header-top__contacts">
+            <ul class="header-top__contacts-list">
+              <li class="header-top__contacts-item header-top__contacts-item--email">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Наш email:</span>
+                  <p><a class="contacts-item__link" href="mailto:sibbc@yandex.ru">sibbc@yandex.ru</a></p>
+                  
+                </div>        </li>
+              <li class="header-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Отдел сбыта:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912205866">+7 (391) 220 58 66</a></p>
+                  
+                </div>        </li>
+              <li class="header-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Приемная:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912211526">+7 (391) 221 15 26</a></p>
+                  
+                </div>        </li>
+            </ul>
+          </div>
+          <!--Actions-->
+          <div class="header-top__actions">
+            <button class="header-top__actions-btn js-popup-open" data-popup="call"><span>Заказать звонок</span></button>
+            <!--Popup-->
+            <div class="popup js-popup" data-popup-id="call">
+              <div class="popup__wrapper">
+                <div class="popup__inner">
+                  <button class="popup__close js-popup-close"></button>
+            
+                  <div class="popup__window">
+                    <div class="popup__content">
+                        <div class="popup-call">
+                          <div class="popup-call__success" style="display: none">
+                            <span class="popup-call__title">Звонок заказа</span>
+                            <p class="popup-call__text">Обычно мы перезваниваем в течени 10 минут</p>
+                            <div class="popup-call__submit">
+                              <button class="btn btn--large btn--primary js-popup-close">Закрыть</button>
+                            </div>
+                          </div>
+                          <div class="popup-call__failure" style="display: none">
+                            <span class="popup-call__title">Ошибка отправки</span>
+                            <p class="popup-call__text">К сожалению ваша заявка не была отправлена.<br>
+                              Но вы можете попробовать отправить еще раз,
+                              данные сохранились в форме.</p>
+                            <div class="popup-call__submit">
+                              <button class="btn btn--large btn--primary">Вернуться к заявке</button>
+                            </div>
+                          </div>
+                          <div class="popup-call__normal" style="display: block">
+                            <div class="popup-call__form">
+                              <span class="popup-call__title">Заказать звонок</span>
+                              <div class="popup-call__input">
+                                <div class="form-field">
+                                  <input type="text" class="form-field__input " placeholder="Фамилия и имя*">
+                                  
+                                </div>        </div>
+                              <div class="popup-call__input">
+                                <div class="form-field">
+                                  <input type="text" class="form-field__input " placeholder="Номер телефона*">
+                                  
+                                </div>        </div>
+                              <div class="popup-call__input">
+                                <div class="form-checkbox">
+                                  <label class="form-checkbox__label">
+                                    <input type="checkbox" class="form-checkbox__input">
+                                    <span class="form-checkbox__icon"><i class="form-checkbox__icon-container"></i></span>
+                                    <span class="form-checkbox__label-text">Я согласен с условиями обработки персональных данных</span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="popup-call__submit">
+                              <button class="popup-call__submit-btn">Заказать</button>
+                            </div>
+                            <div class="popup-call__terms">
+                              <a class="popup-call__terms-link" href="#">Ознакомиться с условиями</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    </div>
+  </div>
+  <!--Main-->
+  <div class="header__main js-header-menu">
+    <div class="container">
+      <div class="header-main">
+        <div class="header-main__container">
+          <div class="header-main__close">
+            <button class="header-main__close-btn js-header-menu__close" type="button" aria-label="Открыть меню.">
+              <span class="header-main__close-icon"></span>
+            </button>
+          </div>
+          <nav class="header-main__menu" role="navigation">
+            <ul class="header-main__list">
+              <li class="header-main__item">
+                <a class="header-main__link active" href="#">главная</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">о компании</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">каталог товаров</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">мастер-классы</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">блог</a>
+              </li>
+              <li class="header-main__item">
+                <a class="header-main__link" href="#">контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>    </div>
+  </div>
+</header>
+
+<main class="page__content">
+
+<div class="home-container">
+  <section class="home-intro">
+    <div class="home-intro__container container">
+      <div class="home-intro__left">
+        <div class="home-slider js-home-slider">
+          <div class="home-slider__content swiper-container js-home-slider__content">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide home-slide">
+                  <div class="home-slide__bg">  <picture>
+        
+        
+            <source data-srcset="../assets/images/home/slider/01.jpg" type="image/jpeg">
+            <img class="lazy" data-sizes="auto" data-original="../assets/images/home/slider/01.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+          </picture>
+        </div>
+                  <div class="home-slide__container">
+                    <div class="home-slide__content">
+                      <span class="home-slide__title">ТЕХНОЛОГИЧЕСКАЯ ПОДДЕРЖКА ВАШЕГО БИЗНЕСА</span>
+                      <ul class="home-slide__list">
+                          <li>Выезд технологов СибХЦ на предприятия</li>
+                          <li>Гарантия качества ингредиентов и сырья</li>
+                          <li>Индивидуальный подход</li>
+                          <li>Программы лояльности</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide home-slide">
+                  <div class="home-slide__bg">  <picture>
+        
+        
+            <source data-srcset="../assets/images/home/slider/02.png" type="image/png">
+            <img class="lazy" data-sizes="auto" data-original="../assets/images/home/slider/02.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+          </picture>
+        </div>
+                  <div class="home-slide__container">
+                    <div class="home-slide__content">
+                      <span class="home-slide__title">Поставка ингридиентов для пекарен и кондитерских:</span>
+                      <ul class="home-slide__list">
+                          <li>Большие складские запасы</li>
+                          <li>Доставка собственным транспортом с соблюдением режима транспортировки</li>
+                          <li>Мастер классы и консультации для наших клиентов.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="swiper-slide home-slide">
+                  <div class="home-slide__bg">  <picture>
+        
+        
+            <source data-srcset="../assets/images/home/slider/03.jpg" type="image/jpeg">
+            <img class="lazy" data-sizes="auto" data-original="../assets/images/home/slider/03.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+          </picture>
+        </div>
+                  <div class="home-slide__container">
+                    <div class="home-slide__content">
+                      <span class="home-slide__title">ИНФОРМИРОВАНИЕ О ТРЕНДАХ И ТЕНДЕНЦИЯХ РЫНКА</span>
+                      <ul class="home-slide__list">
+                          <li>Демонстрационный центр для клиентов</li>
+                          <li>Информация из первых уст: бесплатные обучающие семинары от технологов СибХЦ</li>
+                          <li>Уникальная возможность общения с технологами ведущих предприятий отрасли</li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+            </ul>
+            <div class="home-slider__nav">
+              <div class="slider-nav">
+                <div class="slider-nav__item">
+                  <button class="slider-nav__btn js-home-slider__prev" type="button" aria-label="Предыдущий сайд.">
+                    <svg class="icon icon--action--arrow-left">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#action--arrow-left"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="slider-nav__item">
+                  <button class="slider-nav__btn js-home-slider__next" type="button" aria-label="Слудующий сайд.">
+                    <svg class="icon icon--action--arrow-right">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="../assets/images/spriteInline.svg#action--arrow-right"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="home-slider__pagination">
+              <div class="js-home-slider__pagination"></div>
+            </div>
+          </div>
+        </div>    </div>
+      <div class="home-intro__right">
+        <div class="home-blog">
+          <div class="home-blog__item">
+            <div class="blog-card">
+              <a href="#" class="blog-card__link"></a>
+              <div class="blog-card__container">
+                <div class="blog-card__bg">  <picture>
+            
+            
+                <source data-srcset="../assets/images/home/blog/01.png" type="image/png">
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/home/blog/01.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+            </div>
+                <div class="blog-card__content">
+                  <span class="blog-card__title">XVII Сибирский форум хлебопечения отменен</span>
+                  <p class="blog-card__text">
+                    <a href="#">Подробнее</a>
+                  </p>
+                </div>
+              </div>
+            </div>  </div>
+          <div class="home-blog__item">
+            <div class="blog-card blog-card--white">
+              <a href="#" class="blog-card__link"></a>
+              <div class="blog-card__container">
+                <div class="blog-card__bg">  <picture>
+            
+            
+                <source data-srcset="../assets/images/home/blog/02.jpg" type="image/jpeg">
+                <img class="lazy" data-sizes="auto" data-original="../assets/images/home/blog/02.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+              </picture>
+            </div>
+                <div class="blog-card__content">
+                  <span class="blog-card__title">СИБИРСКИЙ ХЛЕБОПЕКАРНЫЙ ЦЕНТР МЫ ОТКРЫТЫ И РАБОТАЕМ ДЛЯ ВАС!</span>
+                  <p class="blog-card__text">
+                    <a href="#">Подробнее</a>
+                  </p>
+                </div>
+              </div>
+            </div>  </div>
+        </div>    </div>
+    </div>
+  </section>  <section class="section home-partners">
+    <div class="container">
+      <div class="section__container home-partners__container">
+        <div class="home-partners__bg">
+            <picture>
+          
+          
+              <source data-srcset="../assets/images/home/partners/01.jpg" type="image/jpeg">
+              <img class="lazy" data-sizes="auto" data-original="../assets/images/home/partners/01.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+            </picture>
+        </div>
+        <div class="home-partners__content">
+          <header class="section__header section__header--closer">
+            <h2 class="section__title">РАСКРОЙТЕ ПОТЕНЦИАЛ СВОЕГО БИЗНЕСА НА ВСЕ 100% ВМЕСТЕ С "СИБИРСКИМ ХЛЕБОПЕКАРНЫМ
+              ЦЕНТРОМ"</h2>
+          </header>
+          <div class="section__content home-partners__text">
+            <p>Мы станем для вас надежным поставщиком с самым широким ассортиментом продукции для хлебопечения и
+              кондитерского производства. Мы с радостью передадим свой опыт, знания, секреты, тонкости современного
+              хлебопечения и кондитерского искусства.</p>
+            <p>Мы поможем вам открыть пекарню или оптимизировать существующую:</p>
+            <ul>
+              <li>проконсультируем ваших технологов и кондитеров;</li>
+              <li>снизим себестоимость продукции без потери ее качества и пользы;</li>
+              <li>поможем оптимизировать производственные процессы;</li>
+              <li>расскажем, как правильно развивать свой бизнес;</li>
+              <li>вы не пропустите тренды, повысите конкурентноспособность.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <section class="section home-catalog">
+    <div class="container">
+      <div class="section__container">
+        <header class="section__header">
+          <h2 class="section__title section__title--center">КАТАЛОГ ТОВАРОВ</h2>
+        </header>
+        <div class="section__content shop-catalog">
+          <ul class="shop-catalog__list">
+            <li class="shop-catalog__item">
+             <article class="catalog-item">
+               <a href="#" class="catalog-item__link"></a>
+               <div class="catalog-item__content">
+                 <div class="catalog-item__image">
+                     <picture>
+             
+             
+                 <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                 <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+               </picture>
+             
+                 </div>
+                 <h3 class="catalog-item__title">Дрожжи</h3>
+                 
+               </div>
+             </article>          </li>
+            <li class="shop-catalog__item">
+             <article class="catalog-item">
+               <a href="#" class="catalog-item__link"></a>
+               <div class="catalog-item__content">
+                 <div class="catalog-item__image">
+                     <picture>
+             
+             
+                 <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                 <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+               </picture>
+             
+                 </div>
+                 <h3 class="catalog-item__title">Смеси и концентраты</h3>
+                 
+               </div>
+             </article>          </li>
+            <li class="shop-catalog__item">
+             <article class="catalog-item">
+               <a href="#" class="catalog-item__link"></a>
+               <div class="catalog-item__content">
+                 <div class="catalog-item__image">
+                     <picture>
+             
+             
+                 <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                 <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+               </picture>
+             
+                 </div>
+                 <h3 class="catalog-item__title">Улучшители</h3>
+                 
+               </div>
+             </article>          </li>
+            <li class="shop-catalog__item">
+             <article class="catalog-item">
+               <a href="#" class="catalog-item__link"></a>
+               <div class="catalog-item__content">
+                 <div class="catalog-item__image">
+                     <picture>
+             
+             
+                 <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                 <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+               </picture>
+             
+                 </div>
+                 <h3 class="catalog-item__title">Маргарин</h3>
+                 
+               </div>
+             </article>          </li>
+            <li class="shop-catalog__item">
+             <article class="catalog-item">
+               <a href="#" class="catalog-item__link"></a>
+               <div class="catalog-item__content">
+                 <div class="catalog-item__image">
+                     <picture>
+             
+             
+                 <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                 <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+               </picture>
+             
+                 </div>
+                 <h3 class="catalog-item__title">Глазури и кремы</h3>
+                 
+               </div>
+             </article>          </li>
+            <li class="shop-catalog__item">
+             <article class="catalog-item">
+               <a href="#" class="catalog-item__link"></a>
+               <div class="catalog-item__content">
+                 <div class="catalog-item__image">
+                     <picture>
+             
+             
+                 <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                 <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+               </picture>
+             
+                 </div>
+                 <h3 class="catalog-item__title">Конфитюры и повидло</h3>
+                 
+               </div>
+             </article>          </li>
+            <li class="shop-catalog__item">
+             <article class="catalog-item">
+               <a href="#" class="catalog-item__link"></a>
+               <div class="catalog-item__content">
+                 <div class="catalog-item__image">
+                     <picture>
+             
+             
+                 <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                 <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+               </picture>
+             
+                 </div>
+                 <h3 class="catalog-item__title">Гели</h3>
+                 
+               </div>
+             </article>          </li>
+            <li class="shop-catalog__item">
+             <article class="catalog-item">
+               <a href="#" class="catalog-item__link"></a>
+               <div class="catalog-item__content">
+                 <div class="catalog-item__image">
+                     <picture>
+             
+             
+                 <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                 <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+               </picture>
+             
+                 </div>
+                 <h3 class="catalog-item__title">Семена и Орехи</h3>
+                 
+               </div>
+             </article>          </li>
+            <li class="shop-catalog__item">
+             <article class="catalog-item">
+               <a href="#" class="catalog-item__link"></a>
+               <div class="catalog-item__content">
+                 <div class="catalog-item__image">
+                     <picture>
+             
+             
+                 <source data-srcset="../assets/images/home/catalog/ex.png" type="image/png">
+                 <img class="lazy" data-sizes="auto" data-original="../assets/images/home/catalog/ex.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+               </picture>
+             
+                 </div>
+                 <h3 class="catalog-item__title">Специи</h3>
+                 
+               </div>
+             </article>          </li>
+          </ul>
+          <div class="section__action">
+            <a href="#" class="section__action-btn">Все товары</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section home-about">
+    <div class="container">
+      <div class="section__container home-about__container">
+        <div class="home-about__left">
+          <header class="section__header section__header--closer">
+            <h2 class="section__title">Немного о компании</h2>
+          </header>
+          <div class="section__content">
+            <p>
+              «Сибирский Хлебопекарный Центр» — это компания нового бизнес-формата, которая оказывает технологическую, а
+              также информационную поддержку бизнеса клиентов. Наша компания специализируется на комплексном обеспечении
+              хлебопекарных и кондитерских предприятий, торговых сетей, ресторанов пищевыми ингредиентами и сопутствующими
+              товарами для производства хлеба, выпечки и кондитерских изделий.
+            </p>
+            <p>
+              <a href="#">Читать подробнее</a>
+            </p>
+          </div>
+        </div>
+        <div class="home-about__right">
+            <picture>
+          
+          
+              <source data-srcset="../assets/images/home/about/about.jpg" type="image/jpeg">
+              <img class="lazy" data-sizes="auto" data-original="../assets/images/home/about/about.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+            </picture>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section home-reasons">
+    <div class="container">
+      <div class="section__container home-reasons__container">
+        <header class="section__header section__header--closer">
+          <h2 class="section__title section__title--center">5 ПРИЧИН ВЫБРАТЬ "СИБИРСКИЙ ХЛЕБОПЕКАРНЫЙ ЦЕНТР"</h2>
+        </header>
+        <div class="section__content">
+          <ul class="home-reasons__list">
+            <li class="home-reasons__item">
+              <div class="reason-item">
+                <div class="reason-item__content">
+                  <div class="reason-item__image reason-item__image--center">
+                      <picture>
+              
+              
+                  <source data-srcset="../assets/images/home/reasons/icon-1.png" type="image/png">
+                  <img class="lazy" data-sizes="auto" data-original="../assets/images/home/reasons/icon-1.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                </picture>
+              
+                  </div>
+                  <p class="reason-item__text">Наличие собственного демонстрационного центра</p>
+                </div>
+              </div>          </li>
+            <li class="home-reasons__item">
+              <div class="reason-item">
+                <div class="reason-item__content">
+                  <div class="reason-item__image reason-item__image--center">
+                      <picture>
+              
+              
+                  <source data-srcset="../assets/images/home/reasons/icon-2.png" type="image/png">
+                  <img class="lazy" data-sizes="auto" data-original="../assets/images/home/reasons/icon-2.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                </picture>
+              
+                  </div>
+                  <p class="reason-item__text">Многоступенчатый контроль за качеством продукции</p>
+                </div>
+              </div>          </li>
+            <li class="home-reasons__item">
+              <div class="reason-item">
+                <div class="reason-item__content">
+                  <div class="reason-item__image reason-item__image--center">
+                      <picture>
+              
+              
+                  <source data-srcset="../assets/images/home/reasons/icon-3.png" type="image/png">
+                  <img class="lazy" data-sizes="auto" data-original="../assets/images/home/reasons/icon-3.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                </picture>
+              
+                  </div>
+                  <p class="reason-item__text">Эффективные мастер-классы и&nbsp;семинары для&nbsp;клиентов</p>
+                </div>
+              </div>          </li>
+            <li class="home-reasons__item">
+              <div class="reason-item">
+                <div class="reason-item__content">
+                  <div class="reason-item__image reason-item__image--center">
+                      <picture>
+              
+              
+                  <source data-srcset="../assets/images/home/reasons/icon-4.png" type="image/png">
+                  <img class="lazy" data-sizes="auto" data-original="../assets/images/home/reasons/icon-4.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                </picture>
+              
+                  </div>
+                  <p class="reason-item__text">Вся продукция проходит испытания в собственном демо-центре</p>
+                </div>
+              </div>          </li>
+            <li class="home-reasons__item">
+              <div class="reason-item">
+                <div class="reason-item__content">
+                  <div class="reason-item__image reason-item__image--center">
+                      <picture>
+              
+              
+                  <source data-srcset="../assets/images/home/reasons/icon-5.png" type="image/png">
+                  <img class="lazy" data-sizes="auto" data-original="../assets/images/home/reasons/icon-5.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                </picture>
+              
+                  </div>
+                  <p class="reason-item__text">Оперативная доставка и собственный парк авторефрижераторов</p>
+                </div>
+              </div>          </li>
+          </ul>
+        </div>
+        <div class="home-reasons__bg">  <picture>
+  
+  
+      <source data-srcset="../assets/images/home/reasons/bg.png" type="image/png">
+      <img class="lazy" data-sizes="auto" data-original="../assets/images/home/reasons/bg.png" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+    </picture>
+  </div>
+      </div>
+    </div>
+  </section>
+  <section class="section home-help">
+    <div class="container">
+      <div class="section__container home-help__container">
+        <div class="home-help__bg">  <picture>
+  
+  
+      <source data-srcset="../assets/images/home/help/bg.jpg" type="image/jpeg">
+      <img class="lazy" data-sizes="auto" data-original="../assets/images/home/help/bg.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+    </picture>
+  </div>
+        <div class="home-help__content">
+          <header class="section__header">
+            <h2 class="section__title section__title--center">ПОМОЩЬ В ОТКРЫТИИ И РАЗВИТИИ ПЕКАРНИ</h2>
+          </header>
+          <div class="section__content">
+            <ul class="home-help__list">
+              <li>
+                Подбор комплекта оборудования и инвентаря с учетом параметров помещения и пожеланий клиента (может быть как
+                в виде рекомендаций, так и сопровождение поставки с фирмой-партнером)
+              </li>
+              <li>
+                Обучение персонала, т. е. технологов, пекарей, кондитеров клиента, технологиям и приемам производства
+              </li>
+              <li>
+                Подбор ассортимента пекарни с учетом имеющейся информации о популярности тех или иных изделий на рынке,
+                целевой группы покупателей и пожеланий клиента
+              </li>
+              <li> Предоставление информации о рецептурах и технологиях изготовления продукции пекарни</li>
+              <li> Подбор сырья (ингредиентов) под потребности пекарни</li>
+              <li>
+                Постоянная и полная технологическая поддержка, т. е. телефонные консультации, выезд
+                технолога-консультанта на производство.
+              </li>
+              <li>Расчет себестоимости готовых изделий</li>
+              <li>Поставка сырья с доставкой клиенту режимным автотранспортом</li>
+              <li>Участие специалистов клиента в мастер-классах и семинарах СибХЦ</li>
+            </ul>
+            <div class="section__action">
+              <button class="section__action-btn js-popup-open" type="button" data-popup="help-open">Хочу открыть свою пекарню!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <section class="section home-events">
+    <div class="container">
+      <div class="section__container">
+        <header class="section__header">
+          <h2 class="section__title section__title--center">Календарь мероприятий</h2>
+        </header>
+        <div class="section__content">
+          <ul class="home-events__list">
+            <li class="home-events__item">
+              <article class="event-card">
+                <div class="event-card__container">
+                  <a href="#" class="event-card__link" aria-label="Ссылка на мероприятие."></a>
+              
+                  <div class="event-card__content">
+                    <div class="event-card__image">  <picture>
+              
+              
+                  <source data-srcset="../assets/images/home/events/event-1.jpg" type="image/jpeg">
+                  <img class="lazy" data-sizes="auto" data-original="../assets/images/home/events/event-1.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                </picture>
+              </div>
+                    <div class="event-card__text">
+                      <p class="event-card__timetable"><b>Начало мероприятия:</b> <time>1 октября, 2020</time></p>
+                      <h4 class="event-card__title">Семинар-дегустация «Закваски и заварки для хлеба и хлебобулочных изделий»</h4>
+                      <p class="event-card__action"><a href="#" class="event-card__btn">Читать подробнее</a></p>
+                    </div>
+                  </div>
+                </div>
+              </article>          </li>
+            <li class="home-events__item">
+              <article class="event-card">
+                <div class="event-card__container">
+                  <a href="#" class="event-card__link" aria-label="Ссылка на мероприятие."></a>
+              
+                  <div class="event-card__content">
+                    <div class="event-card__image">  <picture>
+              
+              
+                  <source data-srcset="../assets/images/home/events/event-2.jpg" type="image/jpeg">
+                  <img class="lazy" data-sizes="auto" data-original="../assets/images/home/events/event-2.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                </picture>
+              </div>
+                    <div class="event-card__text">
+                      <p class="event-card__timetable"><b>Начало мероприятия:</b> <time>28 марта, 2020</time></p>
+                      <h4 class="event-card__title">Бесплатный мастер-класс от Ивана Забавникова</h4>
+                      <p class="event-card__action"><a href="#" class="event-card__btn">Читать подробнее</a></p>
+                    </div>
+                  </div>
+                </div>
+              </article>          </li>
+            <li class="home-events__item">
+              <article class="event-card">
+                <div class="event-card__container">
+                  <a href="#" class="event-card__link" aria-label="Ссылка на мероприятие."></a>
+              
+                  <div class="event-card__content">
+                    <div class="event-card__image">  <picture>
+              
+              
+                  <source data-srcset="../assets/images/home/events/event-3.jpg" type="image/jpeg">
+                  <img class="lazy" data-sizes="auto" data-original="../assets/images/home/events/event-3.jpg" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt>
+                </picture>
+              </div>
+                    <div class="event-card__text">
+                      <p class="event-card__timetable"><b>Начало мероприятия:</b> <time>29 января, 2020</time></p>
+                      <h4 class="event-card__title">Бесплатный мастер-класс от компании ЗАО «УНИГРА».</h4>
+                      <p class="event-card__action"><a href="#" class="event-card__btn">Читать подробнее</a></p>
+                    </div>
+                  </div>
+                </div>
+              </article>          </li>
+          </ul>
+          <div class="section__action">
+            <a href="#" class="section__action-btn">Все мероприятия</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  <section class="section home-faq">
+    <div class="container">
+      <div class="section__container">
+        <header class="section__header">
+          <h2 class="section__title section__title--center">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+        </header>
+        <div class="section__content">
+          <ul class="home-faq__list">
+            <li>
+              <div class="faq-item js-accord">
+                <div class="faq-item__container">
+                  <div class="faq-item__header js-accord__toggle">
+                    <span class="faq-item__order">01.</span>
+                    <span class="faq-item__title">Можете ли вы осуществить доставку продукции под заказ?</span>
+                    <div class="faq-item__icon">
+                      <i class="icon-arrowDown"></i>
+                    </div>
+                  </div>
+                  <div class="faq-item__content js-accord__body">
+                    <div class="faq-item__content-inner">
+                      <p>Партнерам СибХЦ все заказанные ингредиенты и сырье доставляет транспортная компания «Сибреф» (входит в группу компаний ЗАО «Красноярский дрожжевой завод»).  Доставка осуществляется машинами - рефрижераторами, что гарантирует соблюдение  температурного режима и  других  условий хранения товара во время транспортировки.  Сырье и ингредиенты доставляются на следующий день после заявки, иногда в день заявки (по Красноярску, в населенные пункты Красноярского края, Хакасии ). Доставка продукции производится бесплатно.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>          </li>
+            <li>
+              <div class="faq-item js-accord">
+                <div class="faq-item__container">
+                  <div class="faq-item__header js-accord__toggle">
+                    <span class="faq-item__order">02.</span>
+                    <span class="faq-item__title">На ваши мастер классы могут попасть только представители ваших клиентов?</span>
+                    <div class="faq-item__icon">
+                      <i class="icon-arrowDown"></i>
+                    </div>
+                  </div>
+                  <div class="faq-item__content js-accord__body">
+                    <div class="faq-item__content-inner">
+                      <p>Все партнеры нашей компании получают персональные приглашения на проводимые в Демонстрационном центре СибХЦ мастер-классы. Но если технологи предприятия, не являющегося нашим клиентом, заинтересовались нашей продукцией и хотят попасть на наш мастер-класс, им нужно позвонить по телефону:+7 (391) 221 15 26. Мы будем рады их пригласить.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>          </li>
+            <li>
+              <div class="faq-item js-accord">
+                <div class="faq-item__container">
+                  <div class="faq-item__header js-accord__toggle">
+                    <span class="faq-item__order">03.</span>
+                    <span class="faq-item__title">Насколько безопасна ваша продукция, как осуществляется контроль качества?</span>
+                    <div class="faq-item__icon">
+                      <i class="icon-arrowDown"></i>
+                    </div>
+                  </div>
+                  <div class="faq-item__content js-accord__body">
+                    <div class="faq-item__content-inner">
+                      <p>Все предлагаемая СибХЦ линейка ингредиентов и сырья проходит обязательный контроль качества и имеет соответствующие сертификаты. Наши ингредиенты позволяют производить вкусную и полезную хлебопекарную и кондитерскую продукцию и (важно) дают возможность упростить и ускорить технологический процесс. Партнерам предоставляется полное бесплатное технологическое сопровождение, т. е. от телефонных консультаций по хранению и применению продукта до участия нашего технолога в производственном процессе. Это является гарантией качества конечного продукта.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>          </li>
+            <li>
+              <div class="faq-item js-accord">
+                <div class="faq-item__container">
+                  <div class="faq-item__header js-accord__toggle">
+                    <span class="faq-item__order">04.</span>
+                    <span class="faq-item__title">Можете ли вы осуществить доставку продукции под заказ?</span>
+                    <div class="faq-item__icon">
+                      <i class="icon-arrowDown"></i>
+                    </div>
+                  </div>
+                  <div class="faq-item__content js-accord__body">
+                    <div class="faq-item__content-inner">
+                      <p>Партнерам СибХЦ все заказанные ингредиенты и сырье доставляет транспортная компания «Сибреф» (входит в группу компаний ЗАО «Красноярский дрожжевой завод»). Доставка осуществляется машинами - рефрижераторами, что гарантирует соблюдение температурного режима и других условий хранения товара во время транспортировки. Сырье и ингредиенты доставляются на следующий день после заявки, иногда в день заявки (по Красноярску, в населенные пункты Красноярского края, Хакасии ). Доставка продукции производится бесплатно.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>          </li>
+            <li>
+              <div class="faq-item js-accord">
+                <div class="faq-item__container">
+                  <div class="faq-item__header js-accord__toggle">
+                    <span class="faq-item__order">05.</span>
+                    <span class="faq-item__title">Какие преимущества получают ваши партнеры?</span>
+                    <div class="faq-item__icon">
+                      <i class="icon-arrowDown"></i>
+                    </div>
+                  </div>
+                  <div class="faq-item__content js-accord__body">
+                    <div class="faq-item__content-inner">
+                      <p>Наша компания работает на рынке уже более 10 лет. У нас – индивидуальный подход и гибкая маркетинговая политика. Линейка предлагаемой продукции – это более 500 наименований ингредиентов и сырья. У нас есть все, что необходимо для производства ароматного хлеба, аппетитных булочек, изысканных тортов и пирожных. В том числе – ряд эксклюзивных сырьевых продуктов из Белоруссии, Австрии, Германии, Китая. В нашем Демонстрационном центре лучшие технологи отрасли проводят бесплатные мастер-классы, где делятся секретами вкусной выпечки. Это и классическая рецептура, и новинки хлебопечения и кондитерского производства, – все, что пользуется спросом.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>  <section class="home-map">
+    <div class="home-map__canvas js-ymap"></div>
+  </section></div>
+<!--Popups-->
+<div class="popup js-popup" data-popup-id="help-open">
+  <div class="popup__wrapper">
+    <div class="popup__inner">
+      <button class="popup__close js-popup-close"></button>
+
+      <div class="popup__window">
+        <div class="popup__content">
+            <div class="popup-call">
+              <div class="popup-call__success" style="display: none">
+                <span class="popup-call__title">Заявка на открытие пекарни</span>
+                <p class="popup-call__text">Обычно мы перезваниваем в течени 10 минут</p>
+                <div class="popup-call__submit">
+                  <button class="btn btn--large btn--primary js-popup-close">Закрыть</button>
+                </div>
+              </div>
+              <div class="popup-call__failure" style="display: none">
+                <span class="popup-call__title">Ошибка отправки</span>
+                <p class="popup-call__text">К сожалению ваша заявка не была отправлена.<br>
+                  Но вы можете попробовать отправить еще раз, данные сохранились в форме.</p>
+                <div class="popup-call__submit">
+                  <button class="btn btn--large btn--primary">Вернуться к заявке</button>
+                </div>
+              </div>
+              <div class="popup-call__normal" style="display: block">
+                <div class="popup-call__form">
+                  <span class="popup-call__title">Заявка на открытие пекарни</span>
+                  <div class="popup-call__input">
+                    <div class="form-field">
+                      <input type="text" class="form-field__input " placeholder="Фамилия и имя*">
+                      
+                    </div>        </div>
+                  <div class="popup-call__input">
+                    <div class="form-field">
+                      <input type="text" class="form-field__input " placeholder="Номер телефона*">
+                      
+                    </div>        </div>
+                  <div class="popup-call__input">
+                    <div class="form-checkbox">
+                      <label class="form-checkbox__label">
+                        <input type="checkbox" class="form-checkbox__input">
+                        <span class="form-checkbox__icon"><i class="form-checkbox__icon-container"></i></span>
+                        <span class="form-checkbox__label-text">Я согласен с условиями обработки персональных данных</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="popup-call__submit">
+                  <button class="popup-call__submit-btn">Заказать</button>
+                </div>
+                <div class="popup-call__terms">
+                  <a class="popup-call__terms-link" href="#">Ознакомиться с условиями</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="page__footer footer">
+  <div class="footer__top">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-top__container">
+          <div class="footer-top__logo">
+            <div class="page-logo">
+                <a class="page-logo__container" href="#">
+                  <img src="../assets/images/common/logo.png" alt="Логотип">
+                </a>
+            </div>    </div>
+          <div class="footer-top__nav">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">Каталог товаров</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer-top__contacts">
+            <ul class="footer-top__contacts-list">
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Наш адрес:</span>
+                  <p><span class="contacts-item__text">Россия, г. Красноярск, ул. Маерчака, 55</span></p>
+                  
+                  
+                </div>        </li>
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Отдел сбыта:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912205866">+7 (391) 220 58 66</a></p>
+                  <p><a class="contacts-item__link" href="tel:+73912215773">+7 (391) 221 57 73</a></p>
+                </div>        </li>
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Наш email:</span>
+                  <p><a class="contacts-item__link" href="mailto:sibbc@yandex.ru">sibbc@yandex.ru</a></p>
+                  
+                </div>        </li>
+              <li class="footer-top__contacts-item">
+                <div class="contacts-item">
+                  <span class="contacts-item__title">Приемная:</span>
+                  <p><a class="contacts-item__link" href="tel:+73912211526">+7 (391) 221 15 26</a></p>
+                  
+                </div>        </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer-bottom">
+        <div class="footer-bottom__item">
+          <p>&copy; «Сибирский хлебопекарный центр», 2020.</p>
+        </div>
+        <div class="footer-bottom__item">
+          <p>Разработка сайта — <a href="#" target="_blank" rel="nofollow">SkazMasters</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script src="../js/vendors.js?v=3692" defer></script>
+  <script src="../js/main.js?v=3692" defer></script>
+</body>
+</html>
